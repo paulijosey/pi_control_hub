@@ -1,0 +1,210 @@
+[0.000000] (-) TimerEvent: {}
+[0.000246] (gpio_conf) JobQueued: {'identifier': 'gpio_conf', 'dependencies': OrderedDict()}
+[0.000493] (led_control) JobQueued: {'identifier': 'led_control', 'dependencies': OrderedDict()}
+[0.000612] (pi_hub) JobQueued: {'identifier': 'pi_hub', 'dependencies': OrderedDict()}
+[0.000720] (pump_control) JobQueued: {'identifier': 'pump_control', 'dependencies': OrderedDict()}
+[0.000761] (time_schedule) JobQueued: {'identifier': 'time_schedule', 'dependencies': OrderedDict()}
+[0.000787] (gpio_conf) JobStarted: {'identifier': 'gpio_conf'}
+[0.009797] (led_control) JobStarted: {'identifier': 'led_control'}
+[0.017898] (pi_hub) JobStarted: {'identifier': 'pi_hub'}
+[0.024018] (pump_control) JobStarted: {'identifier': 'pump_control'}
+[0.030328] (time_schedule) JobStarted: {'identifier': 'time_schedule'}
+[0.099846] (-) TimerEvent: {}
+[0.200202] (-) TimerEvent: {}
+[0.300545] (-) TimerEvent: {}
+[0.400898] (-) TimerEvent: {}
+[0.501235] (-) TimerEvent: {}
+[0.601605] (-) TimerEvent: {}
+[0.702061] (-) TimerEvent: {}
+[0.802438] (-) TimerEvent: {}
+[0.903629] (-) TimerEvent: {}
+[0.913953] (led_control) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/led_control', 'build', '--build-base', '/root/ros_ws/build/led_control/build', 'install', '--prefix', '/root/ros_ws/install/led_control', '--record', '/root/ros_ws/build/led_control/install.log', '--single-version-externally-managed'], 'cwd': '/root/ros_ws/src/led_control', 'env': {'HOSTNAME': 'af338d0db606', 'GIT_ASKPASS': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'BROWSER': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh', 'HOME': '/root', 'TERM_PROGRAM_VERSION': '1.68.1', 'CONF_DIR': '/root/config', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-b7176df5-6b3b-4a9d-a81c-65a7ebd8775d.sock', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/root/ros_ws/install', 'ROS_DISTRO': 'foxy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-32f940c26fb02ff3873b8d4a335e4206e54af7f9.sock', '_': '/usr/bin/colcon', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-32f940c26fb02ff3873b8d4a335e4206e54af7f9.sock","/root/.gnupg/S.gpg-agent"]', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-949c39e8bc.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-32f940c26fb02ff3873b8d4a335e4206e54af7f9.sock', 'SHELL': '/bin/bash', 'ROS_WS': '/root/ros_ws', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/root/ros_ws/build/led_control', 'LC_ALL': 'C.UTF-8', 'COLCON': '1', 'PYTHONPATH': '/root/ros_ws/install/led_control/lib/python3.8/site-packages:'}, 'shell': False}
+[0.936948] (gpio_conf) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/gpio_conf', 'build', '--build-base', '/root/ros_ws/build/gpio_conf/build', 'install', '--prefix', '/root/ros_ws/install/gpio_conf', '--record', '/root/ros_ws/build/gpio_conf/install.log', '--single-version-externally-managed'], 'cwd': '/root/ros_ws/src/gpio_conf', 'env': {'HOSTNAME': 'af338d0db606', 'GIT_ASKPASS': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'BROWSER': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh', 'HOME': '/root', 'TERM_PROGRAM_VERSION': '1.68.1', 'CONF_DIR': '/root/config', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-b7176df5-6b3b-4a9d-a81c-65a7ebd8775d.sock', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/root/ros_ws/install', 'ROS_DISTRO': 'foxy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-32f940c26fb02ff3873b8d4a335e4206e54af7f9.sock', '_': '/usr/bin/colcon', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-32f940c26fb02ff3873b8d4a335e4206e54af7f9.sock","/root/.gnupg/S.gpg-agent"]', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-949c39e8bc.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-32f940c26fb02ff3873b8d4a335e4206e54af7f9.sock', 'SHELL': '/bin/bash', 'ROS_WS': '/root/ros_ws', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/root/ros_ws/build/gpio_conf', 'LC_ALL': 'C.UTF-8', 'COLCON': '1', 'PYTHONPATH': '/root/ros_ws/install/gpio_conf/lib/python3.8/site-packages:'}, 'shell': False}
+[0.942417] (pi_hub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/pi_hub', 'build', '--build-base', '/root/ros_ws/build/pi_hub/build', 'install', '--prefix', '/root/ros_ws/install/pi_hub', '--record', '/root/ros_ws/build/pi_hub/install.log', '--single-version-externally-managed'], 'cwd': '/root/ros_ws/src/pi_hub', 'env': {'HOSTNAME': 'af338d0db606', 'GIT_ASKPASS': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'BROWSER': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh', 'HOME': '/root', 'TERM_PROGRAM_VERSION': '1.68.1', 'CONF_DIR': '/root/config', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-b7176df5-6b3b-4a9d-a81c-65a7ebd8775d.sock', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/root/ros_ws/install', 'ROS_DISTRO': 'foxy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-32f940c26fb02ff3873b8d4a335e4206e54af7f9.sock', '_': '/usr/bin/colcon', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-32f940c26fb02ff3873b8d4a335e4206e54af7f9.sock","/root/.gnupg/S.gpg-agent"]', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-949c39e8bc.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-32f940c26fb02ff3873b8d4a335e4206e54af7f9.sock', 'SHELL': '/bin/bash', 'ROS_WS': '/root/ros_ws', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/root/ros_ws/build/pi_hub', 'LC_ALL': 'C.UTF-8', 'COLCON': '1', 'PYTHONPATH': '/root/ros_ws/install/pi_hub/lib/python3.8/site-packages:'}, 'shell': False}
+[1.006422] (-) TimerEvent: {}
+[1.061373] (time_schedule) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/time_schedule', 'build', '--build-base', '/root/ros_ws/build/time_schedule/build', 'install', '--prefix', '/root/ros_ws/install/time_schedule', '--record', '/root/ros_ws/build/time_schedule/install.log', '--single-version-externally-managed'], 'cwd': '/root/ros_ws/src/time_schedule', 'env': {'HOSTNAME': 'af338d0db606', 'GIT_ASKPASS': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'BROWSER': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh', 'HOME': '/root', 'TERM_PROGRAM_VERSION': '1.68.1', 'CONF_DIR': '/root/config', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-b7176df5-6b3b-4a9d-a81c-65a7ebd8775d.sock', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/root/ros_ws/install', 'ROS_DISTRO': 'foxy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-32f940c26fb02ff3873b8d4a335e4206e54af7f9.sock', '_': '/usr/bin/colcon', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-32f940c26fb02ff3873b8d4a335e4206e54af7f9.sock","/root/.gnupg/S.gpg-agent"]', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-949c39e8bc.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-32f940c26fb02ff3873b8d4a335e4206e54af7f9.sock', 'SHELL': '/bin/bash', 'ROS_WS': '/root/ros_ws', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/root/ros_ws/build/time_schedule', 'LC_ALL': 'C.UTF-8', 'COLCON': '1', 'PYTHONPATH': '/root/ros_ws/install/time_schedule/lib/python3.8/site-packages:'}, 'shell': False}
+[1.064094] (pump_control) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/pump_control', 'build', '--build-base', '/root/ros_ws/build/pump_control/build', 'install', '--prefix', '/root/ros_ws/install/pump_control', '--record', '/root/ros_ws/build/pump_control/install.log', '--single-version-externally-managed'], 'cwd': '/root/ros_ws/src/pump_control', 'env': {'HOSTNAME': 'af338d0db606', 'GIT_ASKPASS': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'BROWSER': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh', 'HOME': '/root', 'TERM_PROGRAM_VERSION': '1.68.1', 'CONF_DIR': '/root/config', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-b7176df5-6b3b-4a9d-a81c-65a7ebd8775d.sock', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/root/ros_ws/install', 'ROS_DISTRO': 'foxy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-32f940c26fb02ff3873b8d4a335e4206e54af7f9.sock', '_': '/usr/bin/colcon', 'TERM': 'xterm-256color', 'PATH': '/root/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-32f940c26fb02ff3873b8d4a335e4206e54af7f9.sock","/root/.gnupg/S.gpg-agent"]', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-949c39e8bc.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-32f940c26fb02ff3873b8d4a335e4206e54af7f9.sock', 'SHELL': '/bin/bash', 'ROS_WS': '/root/ros_ws', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/root/ros_ws/build/pump_control', 'LC_ALL': 'C.UTF-8', 'COLCON': '1', 'PYTHONPATH': '/root/ros_ws/install/pump_control/lib/python3.8/site-packages:'}, 'shell': False}
+[1.076192] (pi_hub) StdoutLine: {'line': b'running egg_info\n'}
+[1.076576] (pi_hub) StdoutLine: {'line': b'creating ../../build/pi_hub/pi_hub.egg-info\n'}
+[1.076739] (pi_hub) StdoutLine: {'line': b'writing ../../build/pi_hub/pi_hub.egg-info/PKG-INFO\n'}
+[1.076855] (pi_hub) StdoutLine: {'line': b'writing dependency_links to ../../build/pi_hub/pi_hub.egg-info/dependency_links.txt\n'}
+[1.076996] (pi_hub) StdoutLine: {'line': b'writing entry points to ../../build/pi_hub/pi_hub.egg-info/entry_points.txt\n'}
+[1.077106] (pi_hub) StdoutLine: {'line': b'writing requirements to ../../build/pi_hub/pi_hub.egg-info/requires.txt\n'}
+[1.077209] (pi_hub) StdoutLine: {'line': b'writing top-level names to ../../build/pi_hub/pi_hub.egg-info/top_level.txt\n'}
+[1.078111] (pi_hub) StdoutLine: {'line': b"writing manifest file '../../build/pi_hub/pi_hub.egg-info/SOURCES.txt'\n"}
+[1.079766] (led_control) StdoutLine: {'line': b'running egg_info\n'}
+[1.080133] (gpio_conf) StdoutLine: {'line': b'running egg_info\n'}
+[1.080296] (led_control) StdoutLine: {'line': b'creating ../../build/led_control/led_control.egg-info\n'}
+[1.080504] (led_control) StdoutLine: {'line': b'writing ../../build/led_control/led_control.egg-info/PKG-INFO\n'}
+[1.080810] (led_control) StdoutLine: {'line': b'writing dependency_links to ../../build/led_control/led_control.egg-info/dependency_links.txt\n'}
+[1.080943] (gpio_conf) StdoutLine: {'line': b'creating ../../build/gpio_conf/gpio_conf.egg-info\n'}
+[1.081047] (gpio_conf) StdoutLine: {'line': b'writing ../../build/gpio_conf/gpio_conf.egg-info/PKG-INFO\n'}
+[1.081321] (led_control) StdoutLine: {'line': b'writing entry points to ../../build/led_control/led_control.egg-info/entry_points.txt\n'}
+[1.081490] (gpio_conf) StdoutLine: {'line': b'writing dependency_links to ../../build/gpio_conf/gpio_conf.egg-info/dependency_links.txt\n'}
+[1.081577] (led_control) StdoutLine: {'line': b'writing requirements to ../../build/led_control/led_control.egg-info/requires.txt\n'}
+[1.081656] (led_control) StdoutLine: {'line': b'writing top-level names to ../../build/led_control/led_control.egg-info/top_level.txt\n'}
+[1.081735] (gpio_conf) StdoutLine: {'line': b'writing entry points to ../../build/gpio_conf/gpio_conf.egg-info/entry_points.txt\n'}
+[1.081811] (gpio_conf) StdoutLine: {'line': b'writing requirements to ../../build/gpio_conf/gpio_conf.egg-info/requires.txt\n'}
+[1.081885] (gpio_conf) StdoutLine: {'line': b'writing top-level names to ../../build/gpio_conf/gpio_conf.egg-info/top_level.txt\n'}
+[1.082615] (led_control) StdoutLine: {'line': b"writing manifest file '../../build/led_control/led_control.egg-info/SOURCES.txt'\n"}
+[1.083136] (gpio_conf) StdoutLine: {'line': b"writing manifest file '../../build/gpio_conf/gpio_conf.egg-info/SOURCES.txt'\n"}
+[1.106540] (-) TimerEvent: {}
+[1.108596] (pi_hub) StdoutLine: {'line': b"reading manifest file '../../build/pi_hub/pi_hub.egg-info/SOURCES.txt'\n"}
+[1.109025] (pi_hub) StdoutLine: {'line': b"writing manifest file '../../build/pi_hub/pi_hub.egg-info/SOURCES.txt'\n"}
+[1.109233] (pi_hub) StdoutLine: {'line': b'running build\n'}
+[1.109314] (pi_hub) StdoutLine: {'line': b'running build_py\n'}
+[1.109436] (pi_hub) StdoutLine: {'line': b'creating /root/ros_ws/build/pi_hub/build\n'}
+[1.109607] (pi_hub) StdoutLine: {'line': b'creating /root/ros_ws/build/pi_hub/build/lib\n'}
+[1.109709] (pi_hub) StdoutLine: {'line': b'creating /root/ros_ws/build/pi_hub/build/lib/pi_hub\n'}
+[1.109850] (pi_hub) StdoutLine: {'line': b'copying pi_hub/__init__.py -> /root/ros_ws/build/pi_hub/build/lib/pi_hub\n'}
+[1.111098] (pi_hub) StdoutLine: {'line': b'running install\n'}
+[1.111267] (pi_hub) StdoutLine: {'line': b'running install_lib\n'}
+[1.111370] (pi_hub) StdoutLine: {'line': b'creating /root/ros_ws/install/pi_hub/lib/python3.8/site-packages/pi_hub\n'}
+[1.111483] (pi_hub) StdoutLine: {'line': b'copying /root/ros_ws/build/pi_hub/build/lib/pi_hub/__init__.py -> /root/ros_ws/install/pi_hub/lib/python3.8/site-packages/pi_hub\n'}
+[1.111891] (pi_hub) StdoutLine: {'line': b'byte-compiling /root/ros_ws/install/pi_hub/lib/python3.8/site-packages/pi_hub/__init__.py to __init__.cpython-38.pyc\n'}
+[1.112947] (pi_hub) StdoutLine: {'line': b'running install_data\n'}
+[1.113309] (pi_hub) StdoutLine: {'line': b'creating /root/ros_ws/install/pi_hub/share/ament_index\n'}
+[1.113449] (pi_hub) StdoutLine: {'line': b'creating /root/ros_ws/install/pi_hub/share/ament_index/resource_index\n'}
+[1.113582] (pi_hub) StdoutLine: {'line': b'creating /root/ros_ws/install/pi_hub/share/ament_index/resource_index/packages\n'}
+[1.113737] (pi_hub) StdoutLine: {'line': b'copying resource/pi_hub -> /root/ros_ws/install/pi_hub/share/ament_index/resource_index/packages\n'}
+[1.113920] (pi_hub) StdoutLine: {'line': b'copying package.xml -> /root/ros_ws/install/pi_hub/share/pi_hub\n'}
+[1.114100] (pi_hub) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.115239] (pi_hub) StdoutLine: {'line': b'Copying ../../build/pi_hub/pi_hub.egg-info to /root/ros_ws/install/pi_hub/lib/python3.8/site-packages/pi_hub-0.0.0-py3.8.egg-info\n'}
+[1.116535] (pi_hub) StdoutLine: {'line': b'running install_scripts\n'}
+[1.123055] (led_control) StdoutLine: {'line': b"reading manifest file '../../build/led_control/led_control.egg-info/SOURCES.txt'\n"}
+[1.123747] (led_control) StdoutLine: {'line': b"writing manifest file '../../build/led_control/led_control.egg-info/SOURCES.txt'\n"}
+[1.123964] (led_control) StdoutLine: {'line': b'running build\n'}
+[1.124167] (led_control) StdoutLine: {'line': b'running build_py\n'}
+[1.124489] (led_control) StdoutLine: {'line': b'creating /root/ros_ws/build/led_control/build\n'}
+[1.124703] (led_control) StdoutLine: {'line': b'creating /root/ros_ws/build/led_control/build/lib\n'}
+[1.124895] (led_control) StdoutLine: {'line': b'creating /root/ros_ws/build/led_control/build/lib/led_control\n'}
+[1.125057] (led_control) StdoutLine: {'line': b'copying led_control/led_control_node.py -> /root/ros_ws/build/led_control/build/lib/led_control\n'}
+[1.125207] (led_control) StdoutLine: {'line': b'copying led_control/__init__.py -> /root/ros_ws/build/led_control/build/lib/led_control\n'}
+[1.125357] (led_control) StdoutLine: {'line': b'running install\n'}
+[1.125771] (gpio_conf) StdoutLine: {'line': b"reading manifest file '../../build/gpio_conf/gpio_conf.egg-info/SOURCES.txt'\n"}
+[1.126118] (led_control) StdoutLine: {'line': b'running install_lib\n'}
+[1.126336] (gpio_conf) StdoutLine: {'line': b"writing manifest file '../../build/gpio_conf/gpio_conf.egg-info/SOURCES.txt'\n"}
+[1.126659] (gpio_conf) StdoutLine: {'line': b'running build\n'}
+[1.126920] (gpio_conf) StdoutLine: {'line': b'running build_py\n'}
+[1.127171] (gpio_conf) StdoutLine: {'line': b'creating /root/ros_ws/build/gpio_conf/build\n'}
+[1.127455] (gpio_conf) StdoutLine: {'line': b'creating /root/ros_ws/build/gpio_conf/build/lib\n'}
+[1.127611] (gpio_conf) StdoutLine: {'line': b'creating /root/ros_ws/build/gpio_conf/build/lib/gpio_conf\n'}
+[1.127771] (gpio_conf) StdoutLine: {'line': b'copying gpio_conf/gpio_conf_node.py -> /root/ros_ws/build/gpio_conf/build/lib/gpio_conf\n'}
+[1.127996] (gpio_conf) StdoutLine: {'line': b'copying gpio_conf/__init__.py -> /root/ros_ws/build/gpio_conf/build/lib/gpio_conf\n'}
+[1.128182] (led_control) StdoutLine: {'line': b'creating /root/ros_ws/install/led_control/lib/python3.8/site-packages/led_control\n'}
+[1.128363] (led_control) StdoutLine: {'line': b'copying /root/ros_ws/build/led_control/build/lib/led_control/led_control_node.py -> /root/ros_ws/install/led_control/lib/python3.8/site-packages/led_control\n'}
+[1.128534] (gpio_conf) StdoutLine: {'line': b'running install\n'}
+[1.128706] (led_control) StdoutLine: {'line': b'copying /root/ros_ws/build/led_control/build/lib/led_control/__init__.py -> /root/ros_ws/install/led_control/lib/python3.8/site-packages/led_control\n'}
+[1.129039] (gpio_conf) StdoutLine: {'line': b'running install_lib\n'}
+[1.129207] (led_control) StdoutLine: {'line': b'byte-compiling /root/ros_ws/install/led_control/lib/python3.8/site-packages/led_control/led_control_node.py to led_control_node.cpython-38.pyc\n'}
+[1.129401] (gpio_conf) StdoutLine: {'line': b'creating /root/ros_ws/install/gpio_conf/lib/python3.8/site-packages/gpio_conf\n'}
+[1.129563] (gpio_conf) StdoutLine: {'line': b'copying /root/ros_ws/build/gpio_conf/build/lib/gpio_conf/gpio_conf_node.py -> /root/ros_ws/install/gpio_conf/lib/python3.8/site-packages/gpio_conf\n'}
+[1.129724] (gpio_conf) StdoutLine: {'line': b'copying /root/ros_ws/build/gpio_conf/build/lib/gpio_conf/__init__.py -> /root/ros_ws/install/gpio_conf/lib/python3.8/site-packages/gpio_conf\n'}
+[1.129889] (gpio_conf) StdoutLine: {'line': b'byte-compiling /root/ros_ws/install/gpio_conf/lib/python3.8/site-packages/gpio_conf/gpio_conf_node.py to gpio_conf_node.cpython-38.pyc\n'}
+[1.130119] (led_control) StdoutLine: {'line': b'byte-compiling /root/ros_ws/install/led_control/lib/python3.8/site-packages/led_control/__init__.py to __init__.cpython-38.pyc\n'}
+[1.130342] (led_control) StdoutLine: {'line': b'running install_data\n'}
+[1.130606] (gpio_conf) StdoutLine: {'line': b'byte-compiling /root/ros_ws/install/gpio_conf/lib/python3.8/site-packages/gpio_conf/__init__.py to __init__.cpython-38.pyc\n'}
+[1.130793] (gpio_conf) StdoutLine: {'line': b'running install_data\n'}
+[1.131036] (led_control) StdoutLine: {'line': b'creating /root/ros_ws/install/led_control/share/ament_index\n'}
+[1.131288] (led_control) StdoutLine: {'line': b'creating /root/ros_ws/install/led_control/share/ament_index/resource_index\n'}
+[1.131641] (led_control) StdoutLine: {'line': b'creating /root/ros_ws/install/led_control/share/ament_index/resource_index/packages\n'}
+[1.131846] (led_control) StdoutLine: {'line': b'copying resource/led_control -> /root/ros_ws/install/led_control/share/ament_index/resource_index/packages\n'}
+[1.132000] (gpio_conf) StdoutLine: {'line': b'creating /root/ros_ws/install/gpio_conf/share/ament_index\n'}
+[1.132173] (gpio_conf) StdoutLine: {'line': b'creating /root/ros_ws/install/gpio_conf/share/ament_index/resource_index\n'}
+[1.132327] (gpio_conf) StdoutLine: {'line': b'creating /root/ros_ws/install/gpio_conf/share/ament_index/resource_index/packages\n'}
+[1.132481] (led_control) StdoutLine: {'line': b'copying package.xml -> /root/ros_ws/install/led_control/share/led_control\n'}
+[1.132634] (gpio_conf) StdoutLine: {'line': b'copying resource/gpio_conf -> /root/ros_ws/install/gpio_conf/share/ament_index/resource_index/packages\n'}
+[1.132796] (led_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.132962] (gpio_conf) StdoutLine: {'line': b'copying package.xml -> /root/ros_ws/install/gpio_conf/share/gpio_conf\n'}
+[1.133113] (gpio_conf) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.133294] (led_control) StdoutLine: {'line': b'Copying ../../build/led_control/led_control.egg-info to /root/ros_ws/install/led_control/lib/python3.8/site-packages/led_control-0.0.0-py3.8.egg-info\n'}
+[1.133849] (gpio_conf) StdoutLine: {'line': b'Copying ../../build/gpio_conf/gpio_conf.egg-info to /root/ros_ws/install/gpio_conf/lib/python3.8/site-packages/gpio_conf-0.0.0-py3.8.egg-info\n'}
+[1.134259] (pi_hub) StdoutLine: {'line': b"writing list of installed files to '/root/ros_ws/build/pi_hub/install.log'\n"}
+[1.134942] (led_control) StdoutLine: {'line': b'running install_scripts\n'}
+[1.135293] (gpio_conf) StdoutLine: {'line': b'running install_scripts\n'}
+[1.152985] (led_control) StdoutLine: {'line': b'Installing led_control_node script to /root/ros_ws/install/led_control/lib/led_control\n'}
+[1.153218] (gpio_conf) StdoutLine: {'line': b'Installing gpio_conf_node script to /root/ros_ws/install/gpio_conf/lib/gpio_conf\n'}
+[1.153786] (led_control) StdoutLine: {'line': b"writing list of installed files to '/root/ros_ws/build/led_control/install.log'\n"}
+[1.153905] (gpio_conf) StdoutLine: {'line': b"writing list of installed files to '/root/ros_ws/build/gpio_conf/install.log'\n"}
+[1.155779] (pi_hub) CommandEnded: {'returncode': 0}
+[1.168493] (pi_hub) JobEnded: {'identifier': 'pi_hub', 'rc': 0}
+[1.174350] (time_schedule) StdoutLine: {'line': b'running egg_info\n'}
+[1.174735] (time_schedule) StdoutLine: {'line': b'creating ../../build/time_schedule/time_schedule.egg-info\n'}
+[1.174894] (time_schedule) StdoutLine: {'line': b'writing ../../build/time_schedule/time_schedule.egg-info/PKG-INFO\n'}
+[1.175026] (time_schedule) StdoutLine: {'line': b'writing dependency_links to ../../build/time_schedule/time_schedule.egg-info/dependency_links.txt\n'}
+[1.175129] (time_schedule) StdoutLine: {'line': b'writing entry points to ../../build/time_schedule/time_schedule.egg-info/entry_points.txt\n'}
+[1.175227] (time_schedule) StdoutLine: {'line': b'writing requirements to ../../build/time_schedule/time_schedule.egg-info/requires.txt\n'}
+[1.175320] (time_schedule) StdoutLine: {'line': b'writing top-level names to ../../build/time_schedule/time_schedule.egg-info/top_level.txt\n'}
+[1.176240] (time_schedule) StdoutLine: {'line': b"writing manifest file '../../build/time_schedule/time_schedule.egg-info/SOURCES.txt'\n"}
+[1.184921] (led_control) CommandEnded: {'returncode': 0}
+[1.191353] (pump_control) StdoutLine: {'line': b'running egg_info\n'}
+[1.191835] (pump_control) StdoutLine: {'line': b'creating ../../build/pump_control/pump_control.egg-info\n'}
+[1.194218] (pump_control) StdoutLine: {'line': b'writing ../../build/pump_control/pump_control.egg-info/PKG-INFO\n'}
+[1.194338] (pump_control) StdoutLine: {'line': b'writing dependency_links to ../../build/pump_control/pump_control.egg-info/dependency_links.txt\n'}
+[1.194470] (led_control) JobEnded: {'identifier': 'led_control', 'rc': 0}
+[1.194789] (pump_control) StdoutLine: {'line': b'writing entry points to ../../build/pump_control/pump_control.egg-info/entry_points.txt\n'}
+[1.194962] (pump_control) StdoutLine: {'line': b'writing requirements to ../../build/pump_control/pump_control.egg-info/requires.txt\n'}
+[1.195068] (pump_control) StdoutLine: {'line': b'writing top-level names to ../../build/pump_control/pump_control.egg-info/top_level.txt\n'}
+[1.195150] (gpio_conf) CommandEnded: {'returncode': 0}
+[1.195365] (pump_control) StdoutLine: {'line': b"writing manifest file '../../build/pump_control/pump_control.egg-info/SOURCES.txt'\n"}
+[1.202549] (gpio_conf) JobEnded: {'identifier': 'gpio_conf', 'rc': 0}
+[1.204704] (time_schedule) StdoutLine: {'line': b"reading manifest file '../../build/time_schedule/time_schedule.egg-info/SOURCES.txt'\n"}
+[1.205190] (time_schedule) StdoutLine: {'line': b"writing manifest file '../../build/time_schedule/time_schedule.egg-info/SOURCES.txt'\n"}
+[1.205336] (time_schedule) StdoutLine: {'line': b'running build\n'}
+[1.205448] (time_schedule) StdoutLine: {'line': b'running build_py\n'}
+[1.205627] (time_schedule) StdoutLine: {'line': b'creating /root/ros_ws/build/time_schedule/build\n'}
+[1.205839] (time_schedule) StdoutLine: {'line': b'creating /root/ros_ws/build/time_schedule/build/lib\n'}
+[1.205946] (time_schedule) StdoutLine: {'line': b'creating /root/ros_ws/build/time_schedule/build/lib/time_schedule\n'}
+[1.206036] (time_schedule) StdoutLine: {'line': b'copying time_schedule/time_schedule_node.py -> /root/ros_ws/build/time_schedule/build/lib/time_schedule\n'}
+[1.206124] (time_schedule) StdoutLine: {'line': b'copying time_schedule/__init__.py -> /root/ros_ws/build/time_schedule/build/lib/time_schedule\n'}
+[1.206188] (time_schedule) StdoutLine: {'line': b'running install\n'}
+[1.206428] (time_schedule) StdoutLine: {'line': b'running install_lib\n'}
+[1.206593] (-) TimerEvent: {}
+[1.207086] (time_schedule) StdoutLine: {'line': b'creating /root/ros_ws/install/time_schedule/lib/python3.8/site-packages/time_schedule\n'}
+[1.207618] (time_schedule) StdoutLine: {'line': b'copying /root/ros_ws/build/time_schedule/build/lib/time_schedule/time_schedule_node.py -> /root/ros_ws/install/time_schedule/lib/python3.8/site-packages/time_schedule\n'}
+[1.207719] (time_schedule) StdoutLine: {'line': b'copying /root/ros_ws/build/time_schedule/build/lib/time_schedule/__init__.py -> /root/ros_ws/install/time_schedule/lib/python3.8/site-packages/time_schedule\n'}
+[1.207838] (time_schedule) StdoutLine: {'line': b'byte-compiling /root/ros_ws/install/time_schedule/lib/python3.8/site-packages/time_schedule/time_schedule_node.py to time_schedule_node.cpython-38.pyc\n'}
+[1.208896] (time_schedule) StdoutLine: {'line': b'byte-compiling /root/ros_ws/install/time_schedule/lib/python3.8/site-packages/time_schedule/__init__.py to __init__.cpython-38.pyc\n'}
+[1.209080] (time_schedule) StdoutLine: {'line': b'running install_data\n'}
+[1.209428] (time_schedule) StdoutLine: {'line': b'creating /root/ros_ws/install/time_schedule/share/ament_index\n'}
+[1.209546] (time_schedule) StdoutLine: {'line': b'creating /root/ros_ws/install/time_schedule/share/ament_index/resource_index\n'}
+[1.209680] (time_schedule) StdoutLine: {'line': b'creating /root/ros_ws/install/time_schedule/share/ament_index/resource_index/packages\n'}
+[1.209764] (time_schedule) StdoutLine: {'line': b'copying resource/time_schedule -> /root/ros_ws/install/time_schedule/share/ament_index/resource_index/packages\n'}
+[1.209852] (time_schedule) StdoutLine: {'line': b'copying package.xml -> /root/ros_ws/install/time_schedule/share/time_schedule\n'}
+[1.209931] (time_schedule) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.210849] (time_schedule) StdoutLine: {'line': b'Copying ../../build/time_schedule/time_schedule.egg-info to /root/ros_ws/install/time_schedule/lib/python3.8/site-packages/time_schedule-0.0.0-py3.8.egg-info\n'}
+[1.211579] (time_schedule) StdoutLine: {'line': b'running install_scripts\n'}
+[1.223734] (pump_control) StdoutLine: {'line': b"reading manifest file '../../build/pump_control/pump_control.egg-info/SOURCES.txt'\n"}
+[1.224189] (pump_control) StdoutLine: {'line': b"writing manifest file '../../build/pump_control/pump_control.egg-info/SOURCES.txt'\n"}
+[1.224833] (pump_control) StdoutLine: {'line': b'running build\n'}
+[1.224936] (pump_control) StdoutLine: {'line': b'running build_py\n'}
+[1.225020] (pump_control) StdoutLine: {'line': b'creating /root/ros_ws/build/pump_control/build\n'}
+[1.225100] (pump_control) StdoutLine: {'line': b'creating /root/ros_ws/build/pump_control/build/lib\n'}
+[1.225234] (pump_control) StdoutLine: {'line': b'creating /root/ros_ws/build/pump_control/build/lib/pump_control\n'}
+[1.225307] (pump_control) StdoutLine: {'line': b'copying pump_control/pump_control_node.py -> /root/ros_ws/build/pump_control/build/lib/pump_control\n'}
+[1.225376] (pump_control) StdoutLine: {'line': b'copying pump_control/__init__.py -> /root/ros_ws/build/pump_control/build/lib/pump_control\n'}
+[1.225449] (pump_control) StdoutLine: {'line': b'running install\n'}
+[1.225518] (time_schedule) StdoutLine: {'line': b'Installing time_schedule_node script to /root/ros_ws/install/time_schedule/lib/time_schedule\n'}
+[1.225592] (time_schedule) StdoutLine: {'line': b"writing list of installed files to '/root/ros_ws/build/time_schedule/install.log'\n"}
+[1.225661] (pump_control) StdoutLine: {'line': b'running install_lib\n'}
+[1.225761] (pump_control) StdoutLine: {'line': b'creating /root/ros_ws/install/pump_control/lib/python3.8/site-packages/pump_control\n'}
+[1.225875] (pump_control) StdoutLine: {'line': b'copying /root/ros_ws/build/pump_control/build/lib/pump_control/pump_control_node.py -> /root/ros_ws/install/pump_control/lib/python3.8/site-packages/pump_control\n'}
+[1.225981] (pump_control) StdoutLine: {'line': b'copying /root/ros_ws/build/pump_control/build/lib/pump_control/__init__.py -> /root/ros_ws/install/pump_control/lib/python3.8/site-packages/pump_control\n'}
+[1.226291] (pump_control) StdoutLine: {'line': b'byte-compiling /root/ros_ws/install/pump_control/lib/python3.8/site-packages/pump_control/pump_control_node.py to pump_control_node.cpython-38.pyc\n'}
+[1.227269] (pump_control) StdoutLine: {'line': b'byte-compiling /root/ros_ws/install/pump_control/lib/python3.8/site-packages/pump_control/__init__.py to __init__.cpython-38.pyc\n'}
+[1.227415] (pump_control) StdoutLine: {'line': b'running install_data\n'}
+[1.227631] (pump_control) StdoutLine: {'line': b'creating /root/ros_ws/install/pump_control/share/ament_index\n'}
+[1.227726] (pump_control) StdoutLine: {'line': b'creating /root/ros_ws/install/pump_control/share/ament_index/resource_index\n'}
+[1.227825] (pump_control) StdoutLine: {'line': b'creating /root/ros_ws/install/pump_control/share/ament_index/resource_index/packages\n'}
+[1.227950] (pump_control) StdoutLine: {'line': b'copying resource/pump_control -> /root/ros_ws/install/pump_control/share/ament_index/resource_index/packages\n'}
+[1.228028] (pump_control) StdoutLine: {'line': b'copying package.xml -> /root/ros_ws/install/pump_control/share/pump_control\n'}
+[1.228099] (pump_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.229907] (pump_control) StdoutLine: {'line': b'Copying ../../build/pump_control/pump_control.egg-info to /root/ros_ws/install/pump_control/lib/python3.8/site-packages/pump_control-0.0.0-py3.8.egg-info\n'}
+[1.230133] (pump_control) StdoutLine: {'line': b'running install_scripts\n'}
+[1.242393] (pump_control) StdoutLine: {'line': b'Installing pump_control_node script to /root/ros_ws/install/pump_control/lib/pump_control\n'}
+[1.242656] (pump_control) StdoutLine: {'line': b"writing list of installed files to '/root/ros_ws/build/pump_control/install.log'\n"}
+[1.249943] (time_schedule) CommandEnded: {'returncode': 0}
+[1.258280] (time_schedule) JobEnded: {'identifier': 'time_schedule', 'rc': 0}
+[1.264217] (pump_control) CommandEnded: {'returncode': 0}
+[1.270480] (pump_control) JobEnded: {'identifier': 'pump_control', 'rc': 0}
+[1.271080] (-) EventReactorShutdown: {}

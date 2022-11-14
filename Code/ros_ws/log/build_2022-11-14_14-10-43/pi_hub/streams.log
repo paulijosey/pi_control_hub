@@ -1,0 +1,33 @@
+[0.926s] Invoking command in '/root/ros_ws/src/pi_hub': PYTHONPATH=/root/ros_ws/install/pi_hub/lib/python3.8/site-packages: /usr/bin/python3 setup.py egg_info --egg-base ../../build/pi_hub build --build-base /root/ros_ws/build/pi_hub/build install --prefix /root/ros_ws/install/pi_hub --record /root/ros_ws/build/pi_hub/install.log --single-version-externally-managed
+[1.058s] running egg_info
+[1.059s] creating ../../build/pi_hub/pi_hub.egg-info
+[1.059s] writing ../../build/pi_hub/pi_hub.egg-info/PKG-INFO
+[1.059s] writing dependency_links to ../../build/pi_hub/pi_hub.egg-info/dependency_links.txt
+[1.059s] writing entry points to ../../build/pi_hub/pi_hub.egg-info/entry_points.txt
+[1.059s] writing requirements to ../../build/pi_hub/pi_hub.egg-info/requires.txt
+[1.059s] writing top-level names to ../../build/pi_hub/pi_hub.egg-info/top_level.txt
+[1.060s] writing manifest file '../../build/pi_hub/pi_hub.egg-info/SOURCES.txt'
+[1.091s] reading manifest file '../../build/pi_hub/pi_hub.egg-info/SOURCES.txt'
+[1.091s] writing manifest file '../../build/pi_hub/pi_hub.egg-info/SOURCES.txt'
+[1.091s] running build
+[1.091s] running build_py
+[1.092s] creating /root/ros_ws/build/pi_hub/build
+[1.092s] creating /root/ros_ws/build/pi_hub/build/lib
+[1.092s] creating /root/ros_ws/build/pi_hub/build/lib/pi_hub
+[1.093s] copying pi_hub/__init__.py -> /root/ros_ws/build/pi_hub/build/lib/pi_hub
+[1.093s] running install
+[1.093s] running install_lib
+[1.093s] creating /root/ros_ws/install/pi_hub/lib/python3.8/site-packages/pi_hub
+[1.093s] copying /root/ros_ws/build/pi_hub/build/lib/pi_hub/__init__.py -> /root/ros_ws/install/pi_hub/lib/python3.8/site-packages/pi_hub
+[1.094s] byte-compiling /root/ros_ws/install/pi_hub/lib/python3.8/site-packages/pi_hub/__init__.py to __init__.cpython-38.pyc
+[1.095s] running install_data
+[1.095s] creating /root/ros_ws/install/pi_hub/share/ament_index
+[1.095s] creating /root/ros_ws/install/pi_hub/share/ament_index/resource_index
+[1.096s] creating /root/ros_ws/install/pi_hub/share/ament_index/resource_index/packages
+[1.096s] copying resource/pi_hub -> /root/ros_ws/install/pi_hub/share/ament_index/resource_index/packages
+[1.096s] copying package.xml -> /root/ros_ws/install/pi_hub/share/pi_hub
+[1.096s] running install_egg_info
+[1.097s] Copying ../../build/pi_hub/pi_hub.egg-info to /root/ros_ws/install/pi_hub/lib/python3.8/site-packages/pi_hub-0.0.0-py3.8.egg-info
+[1.099s] running install_scripts
+[1.116s] writing list of installed files to '/root/ros_ws/build/pi_hub/install.log'
+[1.138s] Invoked command in '/root/ros_ws/src/pi_hub' returned '0': PYTHONPATH=/root/ros_ws/install/pi_hub/lib/python3.8/site-packages: /usr/bin/python3 setup.py egg_info --egg-base ../../build/pi_hub build --build-base /root/ros_ws/build/pi_hub/build install --prefix /root/ros_ws/install/pi_hub --record /root/ros_ws/build/pi_hub/install.log --single-version-externally-managed

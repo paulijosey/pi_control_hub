@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/time_schedule/time_schedule.egg-info/PKG-INFO
+../../build/time_schedule/time_schedule.egg-info/SOURCES.txt
+../../build/time_schedule/time_schedule.egg-info/dependency_links.txt
+../../build/time_schedule/time_schedule.egg-info/entry_points.txt
+../../build/time_schedule/time_schedule.egg-info/requires.txt
+../../build/time_schedule/time_schedule.egg-info/top_level.txt
+../../build/time_schedule/time_schedule.egg-info/zip-safe
+resource/time_schedule
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+time_schedule/__init__.py
+time_schedule/time_schedule_node.py
