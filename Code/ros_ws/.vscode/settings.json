@@ -1,0 +1,24 @@
+{
+    "workbench.colorTheme": "Dark One",
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/kinetic/lib/python2.7/dist-packages"
+    ],
+    "python.analysis.typeCheckingMode": "basic",
+    "files.associations": {
+        "vector": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "*.tcc": "cpp"
+    },
+    "editor.rulers": [
+        100
+    ],
+    "fileheader.Author": "Paul Joseph",
+    "fileheader.Email": "josephp@student.ethz.ch",
+    "fileheader.LastModifiedBy": "Paul Joseph",
+    "cmake.configureOnOpen": false,
+    "cmake.sourceDirectory": "${workspaceFolder}/src/pump_control",
+    "python.analysis.extraPaths": [
+        "/opt/ros/kinetic/lib/python2.7/dist-packages"
+    ]
+}
