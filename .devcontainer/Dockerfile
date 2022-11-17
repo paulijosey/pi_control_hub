@@ -10,6 +10,7 @@ RUN   apt-get update && apt-get upgrade -y && apt-get install -y \
       git \
       bc \
       i2c-tools \
+      python3-lgpio \
       libatlas-base-dev \
       libgflags-dev \
       libeigen3-dev \
