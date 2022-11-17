@@ -1,0 +1,258 @@
+[0.058s] Invoking command in '/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs': CMAKE_PREFIX_PATH=/opt/ros/foxy:/root/ros_ws/install/time_schedule:/root/ros_ws/install/pump_control:/root/ros_ws/install/pi_hub:/root/ros_ws/install/led_control:/root/ros_ws/install/gpio_conf /usr/bin/cmake /root/ros_ws/src/pi_hub_srvs -DCMAKE_INSTALL_PREFIX=/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs
+[0.195s] -- The C compiler identification is GNU 9.4.0
+[0.371s] -- The CXX compiler identification is GNU 9.4.0
+[0.383s] -- Check for working C compiler: /usr/bin/cc
+[0.571s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.577s] -- Detecting C compiler ABI info
+[0.816s] -- Detecting C compiler ABI info - done
+[0.879s] -- Detecting C compile features
+[0.880s] -- Detecting C compile features - done
+[0.892s] -- Check for working CXX compiler: /usr/bin/c++
+[1.201s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.204s] -- Detecting CXX compiler ABI info
+[1.429s] -- Detecting CXX compiler ABI info - done
+[1.483s] -- Detecting CXX compile features
+[1.484s] -- Detecting CXX compile features - done
+[1.497s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.577s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.577s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.134s] -- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)
+[2.212s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.227s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.407s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.479s] -- Found FastRTPS: /opt/ros/foxy/include  
+[2.683s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.813s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[2.883s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[3.409s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[3.999s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.364s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.403s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[4.406s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[4.440s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[4.441s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.441s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[4.441s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[4.474s] -- Found PythonExtra: .so  
+[4.588s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[4.632s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.651s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.656s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs/rosidl_generator_c>;/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs/rosidl_generator_c;/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs/rosidl_generator_cpp;/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs/rosidl_typesupport_fastrtps_c;/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs/rosidl_typesupport_fastrtps_cpp;$<BUILD_INTERFACE:/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs/rosidl_typesupport_c>;$<BUILD_INTERFACE:/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs/rosidl_generator_cpp>;/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs/rosidl_generator_py
+[4.656s] -- Configured cppcheck exclude dirs and/or files: 
+[4.679s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.679s] -- Configured cpplint exclude dirs and/or files: 
+[4.681s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.687s] -- Added test 'lint_cmake' to check CMake code style
+[4.691s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[4.707s] -- Added test 'uncrustify' to check C / C++ code style
+[4.707s] -- Configured uncrustify additional arguments: 
+[4.710s] -- Added test 'xmllint' to check XML markup files
+[4.721s] -- Configuring done
+[4.842s] -- Generating done
+[4.851s] -- Build files have been written to: /root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs
+[4.864s] Invoked command in '/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:/root/ros_ws/install/time_schedule:/root/ros_ws/install/pump_control:/root/ros_ws/install/pi_hub:/root/ros_ws/install/led_control:/root/ros_ws/install/gpio_conf /usr/bin/cmake /root/ros_ws/src/pi_hub_srvs -DCMAKE_INSTALL_PREFIX=/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs
+[4.873s] Invoking command in '/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs': CMAKE_PREFIX_PATH=/opt/ros/foxy:/root/ros_ws/install/time_schedule:/root/ros_ws/install/pump_control:/root/ros_ws/install/pi_hub:/root/ros_ws/install/led_control:/root/ros_ws/install/gpio_conf /usr/bin/cmake --build /root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs -- -j4 -l4
+[4.967s] [35m[1mScanning dependencies of target pi_hub_srvs__cpp[0m
+[4.997s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[5.005s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[6.508s] [  5%] Built target pi_hub_srvs__cpp
+[6.604s] [  7%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[6.661s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[6.885s] [35m[1mScanning dependencies of target pi_hub_srvs__rosidl_generator_c[0m
+[6.922s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[7.029s] [ 15%] [32mBuilding C object CMakeFiles/pi_hub_srvs__rosidl_generator_c.dir/rosidl_generator_c/pi_hub_srvs/srv/detail/turn_on__functions.c.o[0m
+[7.566s] [ 17%] [32mBuilding C object CMakeFiles/pi_hub_srvs__rosidl_generator_c.dir/rosidl_generator_c/pi_hub_srvs/srv/detail/turn_off__functions.c.o[0m
+[7.831s] [35m[1mScanning dependencies of target pi_hub_srvs__rosidl_typesupport_cpp[0m
+[7.994s] [ 20%] [32mBuilding CXX object CMakeFiles/pi_hub_srvs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pi_hub_srvs/srv/turn_on__type_support.cpp.o[0m
+[8.106s] [ 23%] [32m[1mLinking C shared library libpi_hub_srvs__rosidl_generator_c.so[0m
+[8.470s] [ 23%] Built target pi_hub_srvs__rosidl_generator_c
+[8.529s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[8.939s] [35m[1mScanning dependencies of target pi_hub_srvs__rosidl_typesupport_introspection_cpp[0m
+[9.179s] [ 28%] [32mBuilding CXX object CMakeFiles/pi_hub_srvs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pi_hub_srvs/srv/detail/turn_on__type_support.cpp.o[0m
+[9.425s] [35m[1mScanning dependencies of target pi_hub_srvs__rosidl_typesupport_fastrtps_cpp[0m
+[9.594s] [ 30%] [32mBuilding CXX object CMakeFiles/pi_hub_srvs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pi_hub_srvs/srv/turn_off__type_support.cpp.o[0m
+[9.599s] [ 33%] [32mBuilding CXX object CMakeFiles/pi_hub_srvs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pi_hub_srvs/srv/detail/dds_fastrtps/turn_on__type_support.cpp.o[0m
+[10.470s] [35m[1mScanning dependencies of target pi_hub_srvs__rosidl_typesupport_introspection_c[0m
+[10.592s] [ 35%] [32m[1mLinking CXX shared library libpi_hub_srvs__rosidl_typesupport_cpp.so[0m
+[10.643s] [ 38%] [32mBuilding C object CMakeFiles/pi_hub_srvs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pi_hub_srvs/srv/detail/turn_on__type_support.c.o[0m
+[10.890s] [ 38%] Built target pi_hub_srvs__rosidl_typesupport_cpp
+[10.931s] [ 41%] [32mBuilding CXX object CMakeFiles/pi_hub_srvs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pi_hub_srvs/srv/detail/turn_off__type_support.cpp.o[0m
+[10.943s] [ 43%] [32mBuilding C object CMakeFiles/pi_hub_srvs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pi_hub_srvs/srv/detail/turn_off__type_support.c.o[0m
+[10.953s] [ 46%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[11.237s] [ 48%] [32m[1mLinking C shared library libpi_hub_srvs__rosidl_typesupport_introspection_c.so[0m
+[11.572s] [ 48%] Built target pi_hub_srvs__rosidl_typesupport_introspection_c
+[11.637s] [ 51%] [32mBuilding CXX object CMakeFiles/pi_hub_srvs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pi_hub_srvs/srv/detail/dds_fastrtps/turn_off__type_support.cpp.o[0m
+[13.071s] [ 53%] [32m[1mLinking CXX shared library libpi_hub_srvs__rosidl_typesupport_introspection_cpp.so[0m
+[13.262s] [35m[1mScanning dependencies of target pi_hub_srvs__rosidl_typesupport_c[0m
+[13.361s] [ 53%] Built target pi_hub_srvs__rosidl_typesupport_introspection_cpp
+[13.394s] [ 56%] [32mBuilding CXX object CMakeFiles/pi_hub_srvs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pi_hub_srvs/srv/turn_off__type_support.cpp.o[0m
+[13.408s] [ 58%] [32mBuilding CXX object CMakeFiles/pi_hub_srvs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pi_hub_srvs/srv/turn_on__type_support.cpp.o[0m
+[13.708s] [ 61%] [32m[1mLinking CXX shared library libpi_hub_srvs__rosidl_typesupport_c.so[0m
+[13.792s] [ 64%] [32m[1mLinking CXX shared library libpi_hub_srvs__rosidl_typesupport_fastrtps_cpp.so[0m
+[13.923s] [ 64%] Built target pi_hub_srvs__rosidl_typesupport_c
+[14.340s] [ 64%] Built target pi_hub_srvs__rosidl_typesupport_fastrtps_cpp
+[14.373s] [ 66%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[14.976s] [35m[1mScanning dependencies of target pi_hub_srvs__rosidl_typesupport_fastrtps_c[0m
+[15.026s] [ 69%] [32mBuilding CXX object CMakeFiles/pi_hub_srvs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pi_hub_srvs/srv/detail/turn_on__type_support_c.cpp.o[0m
+[15.027s] [ 71%] [32mBuilding CXX object CMakeFiles/pi_hub_srvs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pi_hub_srvs/srv/detail/turn_off__type_support_c.cpp.o[0m
+[15.881s] [ 74%] [32m[1mLinking CXX shared library libpi_hub_srvs__rosidl_typesupport_fastrtps_c.so[0m
+[16.075s] [ 74%] Built target pi_hub_srvs__rosidl_typesupport_fastrtps_c
+[16.091s] [35m[1mScanning dependencies of target pi_hub_srvs[0m
+[16.107s] [ 74%] Built target pi_hub_srvs
+[16.124s] [35m[1mScanning dependencies of target pi_hub_srvs__py[0m
+[16.145s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[17.394s] [ 76%] Built target pi_hub_srvs__py
+[17.409s] [35m[1mScanning dependencies of target pi_hub_srvs__python[0m
+[17.473s] [ 79%] [32mBuilding C object CMakeFiles/pi_hub_srvs__python.dir/rosidl_generator_py/pi_hub_srvs/srv/_turn_on_s.c.o[0m
+[17.475s] [ 82%] [32mBuilding C object CMakeFiles/pi_hub_srvs__python.dir/rosidl_generator_py/pi_hub_srvs/srv/_turn_off_s.c.o[0m
+[17.696s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/pi_hub_srvs/libpi_hub_srvs__python.so[0m
+[17.789s] [ 84%] Built target pi_hub_srvs__python
+[17.811s] [35m[1mScanning dependencies of target pi_hub_srvs__rosidl_typesupport_fastrtps_c__pyext[0m
+[17.811s] [35m[1mScanning dependencies of target pi_hub_srvs__rosidl_typesupport_introspection_c__pyext[0m
+[17.879s] [ 87%] [32mBuilding C object CMakeFiles/pi_hub_srvs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/pi_hub_srvs/_pi_hub_srvs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[17.891s] [ 89%] [32mBuilding C object CMakeFiles/pi_hub_srvs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/pi_hub_srvs/_pi_hub_srvs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[18.231s] [ 92%] [32m[1mLinking CXX shared library rosidl_generator_py/pi_hub_srvs/pi_hub_srvs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[18.318s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/pi_hub_srvs/pi_hub_srvs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[18.409s] [ 94%] Built target pi_hub_srvs__rosidl_typesupport_fastrtps_c__pyext
+[18.420s] [ 94%] Built target pi_hub_srvs__rosidl_typesupport_introspection_c__pyext
+[18.431s] [35m[1mScanning dependencies of target pi_hub_srvs__rosidl_typesupport_c__pyext[0m
+[18.483s] [ 97%] [32mBuilding C object CMakeFiles/pi_hub_srvs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/pi_hub_srvs/_pi_hub_srvs_s.ep.rosidl_typesupport_c.c.o[0m
+[18.635s] [100%] [32m[1mLinking C shared library rosidl_generator_py/pi_hub_srvs/pi_hub_srvs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[18.724s] [100%] Built target pi_hub_srvs__rosidl_typesupport_c__pyext
+[18.744s] Invoked command in '/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:/root/ros_ws/install/time_schedule:/root/ros_ws/install/pump_control:/root/ros_ws/install/pi_hub:/root/ros_ws/install/led_control:/root/ros_ws/install/gpio_conf /usr/bin/cmake --build /root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs -- -j4 -l4
+[18.901s] Invoking command in '/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs': CMAKE_PREFIX_PATH=/opt/ros/foxy:/root/ros_ws/install/time_schedule:/root/ros_ws/install/pump_control:/root/ros_ws/install/pi_hub:/root/ros_ws/install/led_control:/root/ros_ws/install/gpio_conf /usr/bin/cmake --install /root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs
+[18.914s] -- Install configuration: ""
+[18.914s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/ament_index/resource_index/rosidl_interfaces/pi_hub_srvs
+[18.915s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs
+[18.915s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/msg
+[18.915s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/msg/rosidl_generator_c__visibility_control.h
+[18.916s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv
+[18.916s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail
+[18.916s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__type_support.h
+[18.916s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__functions.h
+[18.916s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__functions.c
+[18.917s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__functions.h
+[18.917s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__struct.h
+[18.917s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__struct.h
+[18.917s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__functions.c
+[18.917s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__type_support.h
+[18.918s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/turn_off.h
+[18.918s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/turn_on.h
+[18.918s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/environment/library_path.sh
+[18.919s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/environment/library_path.dsv
+[18.919s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_generator_c.so
+[18.921s] -- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_generator_c.so" to ""
+[18.921s] -- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs
+[18.921s] -- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/msg
+[18.922s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[18.922s] -- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv
+[18.922s] -- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail
+[18.923s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__rosidl_typesupport_fastrtps_c.h
+[18.923s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__rosidl_typesupport_fastrtps_c.h
+[18.923s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_fastrtps_c.so
+[18.924s] -- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_fastrtps_c.so" to ""
+[18.924s] -- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs
+[18.924s] -- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/msg
+[18.925s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[18.925s] -- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv
+[18.925s] -- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail
+[18.925s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__rosidl_typesupport_fastrtps_cpp.hpp
+[18.925s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/dds_fastrtps
+[18.926s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__rosidl_typesupport_fastrtps_cpp.hpp
+[18.926s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_fastrtps_cpp.so
+[18.926s] -- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[18.927s] -- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs
+[18.927s] -- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/msg
+[18.927s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[18.928s] -- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv
+[18.928s] -- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail
+[18.928s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__type_support.c
+[18.928s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__rosidl_typesupport_introspection_c.h
+[18.928s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__type_support.c
+[18.929s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__rosidl_typesupport_introspection_c.h
+[18.929s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_introspection_c.so
+[18.929s] -- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_introspection_c.so" to ""
+[18.929s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_c.so
+[18.930s] -- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_c.so" to ""
+[18.931s] -- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs
+[18.931s] -- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv
+[18.931s] -- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail
+[18.932s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__builder.hpp
+[18.932s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__traits.hpp
+[18.933s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__struct.hpp
+[18.933s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__builder.hpp
+[18.933s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__struct.hpp
+[18.934s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__traits.hpp
+[18.934s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/turn_off.hpp
+[18.934s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/turn_on.hpp
+[18.934s] -- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs
+[18.934s] -- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv
+[18.935s] -- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail
+[18.935s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__type_support.cpp
+[18.935s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__rosidl_typesupport_introspection_cpp.hpp
+[18.935s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__type_support.cpp
+[18.935s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__rosidl_typesupport_introspection_cpp.hpp
+[18.936s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_introspection_cpp.so
+[18.936s] -- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_introspection_cpp.so" to ""
+[18.936s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_cpp.so
+[18.937s] -- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_cpp.so" to ""
+[18.938s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/environment/pythonpath.sh
+[18.938s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/environment/pythonpath.dsv
+[18.939s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/__init__.py
+[19.035s] Compiling '/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/__init__.py'...
+[19.048s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/srv
+[19.048s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/srv/_turn_off_s.c
+[19.048s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/srv/_turn_off.py
+[19.049s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/srv/__init__.py
+[19.049s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/srv/_turn_on.py
+[19.049s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/srv/_turn_on_s.c
+[19.050s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/pi_hub_srvs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[19.051s] -- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/pi_hub_srvs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[19.051s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/pi_hub_srvs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[19.054s] -- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/pi_hub_srvs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[19.055s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/pi_hub_srvs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[19.056s] -- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/pi_hub_srvs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[19.057s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__python.so
+[19.061s] -- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__python.so" to ""
+[19.061s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/srv/TurnOn.idl
+[19.063s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/srv/TurnOff.idl
+[19.063s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/srv/TurnOn.srv
+[19.064s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/srv/TurnOn_Request.msg
+[19.064s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/srv/TurnOn_Response.msg
+[19.065s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/srv/TurnOff.srv
+[19.065s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/srv/TurnOff_Request.msg
+[19.066s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/srv/TurnOff_Response.msg
+[19.066s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/ament_index/resource_index/package_run_dependencies/pi_hub_srvs
+[19.067s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/ament_index/resource_index/parent_prefix_path/pi_hub_srvs
+[19.067s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/environment/ament_prefix_path.sh
+[19.068s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/environment/ament_prefix_path.dsv
+[19.068s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/environment/path.sh
+[19.069s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/environment/path.dsv
+[19.071s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/local_setup.bash
+[19.072s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/local_setup.sh
+[19.073s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/local_setup.zsh
+[19.074s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/local_setup.dsv
+[19.075s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/package.dsv
+[19.075s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/ament_index/resource_index/packages/pi_hub_srvs
+[19.075s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_generator_cExport.cmake
+[19.075s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_generator_cExport-noconfig.cmake
+[19.076s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_typesupport_introspection_cExport.cmake
+[19.076s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[19.076s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_typesupport_cExport.cmake
+[19.076s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_typesupport_cExport-noconfig.cmake
+[19.076s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_generator_cppExport.cmake
+[19.077s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_typesupport_introspection_cppExport.cmake
+[19.077s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[19.077s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_typesupport_cppExport.cmake
+[19.077s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_typesupport_cppExport-noconfig.cmake
+[19.078s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/rosidl_cmake-extras.cmake
+[19.078s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/ament_cmake_export_dependencies-extras.cmake
+[19.078s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/ament_cmake_export_libraries-extras.cmake
+[19.079s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/ament_cmake_export_targets-extras.cmake
+[19.079s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/ament_cmake_export_include_directories-extras.cmake
+[19.079s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[19.079s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[19.080s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvsConfig.cmake
+[19.080s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvsConfig-version.cmake
+[19.080s] -- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/package.xml
+[19.087s] Invoked command in '/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy:/root/ros_ws/install/time_schedule:/root/ros_ws/install/pump_control:/root/ros_ws/install/pi_hub:/root/ros_ws/install/led_control:/root/ros_ws/install/gpio_conf /usr/bin/cmake --install /root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs

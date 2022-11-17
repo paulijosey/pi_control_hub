@@ -1,0 +1,456 @@
+[0.000000] (-) TimerEvent: {}
+[0.000923] (pi_hub_srvs) JobQueued: {'identifier': 'pi_hub_srvs', 'dependencies': OrderedDict()}
+[0.001557] (pi_hub_srvs) JobStarted: {'identifier': 'pi_hub_srvs'}
+[0.055904] (pi_hub_srvs) JobProgress: {'identifier': 'pi_hub_srvs', 'progress': 'cmake'}
+[0.057190] (pi_hub_srvs) Command: {'cmd': ['/usr/bin/cmake', '/root/ros_ws/src/pi_hub_srvs', '-DCMAKE_INSTALL_PREFIX=/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs'], 'cwd': '/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs', 'env': OrderedDict([('HOSTNAME', '06ec87cb0e22'), ('GIT_ASKPASS', '/root/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/root/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/root/ros_ws/src'), ('TERM_PROGRAM_VERSION', '1.72.2'), ('CONF_DIR', '/root/config'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-2ba09a4c-c68d-4974-a44c-f809eede2120.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/root/ros_ws/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-6b755427f3799523f87b3f72012fa30ae6046065.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-6b755427f3799523f87b3f72012fa30ae6046065.sock","/root/.gnupg/S.gpg-agent"]'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-949c39e8bc.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-6b755427f3799523f87b3f72012fa30ae6046065.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy:/root/ros_ws/install/time_schedule:/root/ros_ws/install/pump_control:/root/ros_ws/install/pi_hub:/root/ros_ws/install/led_control:/root/ros_ws/install/gpio_conf'), ('SHELL', '/bin/bash'), ('ROS_WS', '/root/ros_ws'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/root/ros_ws/install/time_schedule/lib/python3.8/site-packages:/root/ros_ws/install/pump_control/lib/python3.8/site-packages:/root/ros_ws/install/pi_hub/lib/python3.8/site-packages:/root/ros_ws/install/led_control/lib/python3.8/site-packages:/root/ros_ws/install/gpio_conf/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy:/root/ros_ws/install/time_schedule:/root/ros_ws/install/pump_control:/root/ros_ws/install/pi_hub:/root/ros_ws/install/led_control:/root/ros_ws/install/gpio_conf')]), 'shell': False}
+[0.099393] (-) TimerEvent: {}
+[0.196871] (pi_hub_srvs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.199463] (-) TimerEvent: {}
+[0.299738] (-) TimerEvent: {}
+[0.372682] (pi_hub_srvs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.383554] (pi_hub_srvs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.399833] (-) TimerEvent: {}
+[0.500447] (-) TimerEvent: {}
+[0.572844] (pi_hub_srvs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.578287] (pi_hub_srvs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.600565] (-) TimerEvent: {}
+[0.700974] (-) TimerEvent: {}
+[0.801410] (-) TimerEvent: {}
+[0.817097] (pi_hub_srvs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.879998] (pi_hub_srvs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.881600] (pi_hub_srvs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.893527] (pi_hub_srvs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.901525] (-) TimerEvent: {}
+[1.002242] (-) TimerEvent: {}
+[1.102645] (-) TimerEvent: {}
+[1.201977] (pi_hub_srvs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[1.202737] (-) TimerEvent: {}
+[1.205247] (pi_hub_srvs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.302970] (-) TimerEvent: {}
+[1.403686] (-) TimerEvent: {}
+[1.430220] (pi_hub_srvs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.484196] (pi_hub_srvs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.485674] (pi_hub_srvs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.498526] (pi_hub_srvs) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[1.503874] (-) TimerEvent: {}
+[1.578444] (pi_hub_srvs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[1.578807] (pi_hub_srvs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.603977] (-) TimerEvent: {}
+[1.704428] (-) TimerEvent: {}
+[1.806024] (-) TimerEvent: {}
+[1.907111] (-) TimerEvent: {}
+[2.009735] (-) TimerEvent: {}
+[2.112969] (-) TimerEvent: {}
+[2.135426] (pi_hub_srvs) StdoutLine: {'line': b'-- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)\n'}
+[2.213104] (-) TimerEvent: {}
+[2.213453] (pi_hub_srvs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.228492] (pi_hub_srvs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[2.313250] (-) TimerEvent: {}
+[2.408294] (pi_hub_srvs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[2.415826] (-) TimerEvent: {}
+[2.480300] (pi_hub_srvs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[2.515936] (-) TimerEvent: {}
+[2.616331] (-) TimerEvent: {}
+[2.684549] (pi_hub_srvs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.716460] (-) TimerEvent: {}
+[2.813974] (pi_hub_srvs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[2.816567] (-) TimerEvent: {}
+[2.884343] (pi_hub_srvs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[2.916676] (-) TimerEvent: {}
+[3.017015] (-) TimerEvent: {}
+[3.117340] (-) TimerEvent: {}
+[3.223094] (-) TimerEvent: {}
+[3.323500] (-) TimerEvent: {}
+[3.410391] (pi_hub_srvs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[3.423620] (-) TimerEvent: {}
+[3.524050] (-) TimerEvent: {}
+[3.631169] (-) TimerEvent: {}
+[3.732214] (-) TimerEvent: {}
+[3.833497] (-) TimerEvent: {}
+[3.933933] (-) TimerEvent: {}
+[3.999466] (pi_hub_srvs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.034056] (-) TimerEvent: {}
+[4.135780] (-) TimerEvent: {}
+[4.237412] (-) TimerEvent: {}
+[4.337801] (-) TimerEvent: {}
+[4.365663] (pi_hub_srvs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.404714] (pi_hub_srvs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[4.407101] (pi_hub_srvs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[4.437932] (-) TimerEvent: {}
+[4.441725] (pi_hub_srvs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[4.442115] (pi_hub_srvs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.442364] (pi_hub_srvs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[4.442556] (pi_hub_srvs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[4.475498] (pi_hub_srvs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.538088] (-) TimerEvent: {}
+[4.589507] (pi_hub_srvs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[4.633468] (pi_hub_srvs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[4.638243] (-) TimerEvent: {}
+[4.652376] (pi_hub_srvs) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.657644] (pi_hub_srvs) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs/rosidl_generator_c>;/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs/rosidl_generator_c;/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs/rosidl_generator_cpp;/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs/rosidl_typesupport_fastrtps_c;/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs/rosidl_typesupport_fastrtps_cpp;$<BUILD_INTERFACE:/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs/rosidl_typesupport_c>;$<BUILD_INTERFACE:/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs/rosidl_generator_cpp>;/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs/rosidl_generator_py\n'}
+[4.657830] (pi_hub_srvs) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.680032] (pi_hub_srvs) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[4.680271] (pi_hub_srvs) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[4.682878] (pi_hub_srvs) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[4.687843] (pi_hub_srvs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.692615] (pi_hub_srvs) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[4.707884] (pi_hub_srvs) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.708336] (pi_hub_srvs) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.711166] (pi_hub_srvs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.722854] (pi_hub_srvs) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.738397] (-) TimerEvent: {}
+[4.838707] (-) TimerEvent: {}
+[4.842973] (pi_hub_srvs) StdoutLine: {'line': b'-- Generating done\n'}
+[4.851757] (pi_hub_srvs) StdoutLine: {'line': b'-- Build files have been written to: /root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs\n'}
+[4.864946] (pi_hub_srvs) CommandEnded: {'returncode': 0}
+[4.866352] (pi_hub_srvs) JobProgress: {'identifier': 'pi_hub_srvs', 'progress': 'build'}
+[4.869028] (pi_hub_srvs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs', '--', '-j4', '-l4'], 'cwd': '/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs', 'env': OrderedDict([('HOSTNAME', '06ec87cb0e22'), ('GIT_ASKPASS', '/root/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/root/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/root/ros_ws/src'), ('TERM_PROGRAM_VERSION', '1.72.2'), ('CONF_DIR', '/root/config'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-2ba09a4c-c68d-4974-a44c-f809eede2120.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/root/ros_ws/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-6b755427f3799523f87b3f72012fa30ae6046065.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-6b755427f3799523f87b3f72012fa30ae6046065.sock","/root/.gnupg/S.gpg-agent"]'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-949c39e8bc.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-6b755427f3799523f87b3f72012fa30ae6046065.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy:/root/ros_ws/install/time_schedule:/root/ros_ws/install/pump_control:/root/ros_ws/install/pi_hub:/root/ros_ws/install/led_control:/root/ros_ws/install/gpio_conf'), ('SHELL', '/bin/bash'), ('ROS_WS', '/root/ros_ws'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/root/ros_ws/install/time_schedule/lib/python3.8/site-packages:/root/ros_ws/install/pump_control/lib/python3.8/site-packages:/root/ros_ws/install/pi_hub/lib/python3.8/site-packages:/root/ros_ws/install/led_control/lib/python3.8/site-packages:/root/ros_ws/install/gpio_conf/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy:/root/ros_ws/install/time_schedule:/root/ros_ws/install/pump_control:/root/ros_ws/install/pi_hub:/root/ros_ws/install/led_control:/root/ros_ws/install/gpio_conf')]), 'shell': False}
+[4.942225] (-) TimerEvent: {}
+[4.968268] (pi_hub_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pi_hub_srvs__cpp\x1b[0m\n'}
+[4.998803] (pi_hub_srvs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[5.005995] (pi_hub_srvs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[5.042327] (-) TimerEvent: {}
+[5.143045] (-) TimerEvent: {}
+[5.244232] (-) TimerEvent: {}
+[5.345398] (-) TimerEvent: {}
+[5.445905] (-) TimerEvent: {}
+[5.549113] (-) TimerEvent: {}
+[5.650394] (-) TimerEvent: {}
+[5.750784] (-) TimerEvent: {}
+[5.851803] (-) TimerEvent: {}
+[5.952555] (-) TimerEvent: {}
+[6.053237] (-) TimerEvent: {}
+[6.153629] (-) TimerEvent: {}
+[6.254635] (-) TimerEvent: {}
+[6.358074] (-) TimerEvent: {}
+[6.472106] (-) TimerEvent: {}
+[6.509250] (pi_hub_srvs) StdoutLine: {'line': b'[  5%] Built target pi_hub_srvs__cpp\n'}
+[6.577819] (-) TimerEvent: {}
+[6.605838] (pi_hub_srvs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.662286] (pi_hub_srvs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.677932] (-) TimerEvent: {}
+[6.778282] (-) TimerEvent: {}
+[6.879403] (-) TimerEvent: {}
+[6.885986] (pi_hub_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pi_hub_srvs__rosidl_generator_c\x1b[0m\n'}
+[6.923578] (pi_hub_srvs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.979640] (-) TimerEvent: {}
+[7.030563] (pi_hub_srvs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/pi_hub_srvs__rosidl_generator_c.dir/rosidl_generator_c/pi_hub_srvs/srv/detail/turn_on__functions.c.o\x1b[0m\n'}
+[7.079684] (-) TimerEvent: {}
+[7.182707] (-) TimerEvent: {}
+[7.283728] (-) TimerEvent: {}
+[7.397547] (-) TimerEvent: {}
+[7.500586] (-) TimerEvent: {}
+[7.559204] (pi_hub_srvs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/pi_hub_srvs__rosidl_generator_c.dir/rosidl_generator_c/pi_hub_srvs/srv/detail/turn_off__functions.c.o\x1b[0m\n'}
+[7.603241] (-) TimerEvent: {}
+[7.703590] (-) TimerEvent: {}
+[7.803982] (-) TimerEvent: {}
+[7.832414] (pi_hub_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pi_hub_srvs__rosidl_typesupport_cpp\x1b[0m\n'}
+[7.904112] (-) TimerEvent: {}
+[7.995776] (pi_hub_srvs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/pi_hub_srvs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pi_hub_srvs/srv/turn_on__type_support.cpp.o\x1b[0m\n'}
+[8.004222] (-) TimerEvent: {}
+[8.104588] (-) TimerEvent: {}
+[8.107510] (pi_hub_srvs) StdoutLine: {'line': b'[ 23%] \x1b[32m\x1b[1mLinking C shared library libpi_hub_srvs__rosidl_generator_c.so\x1b[0m\n'}
+[8.204697] (-) TimerEvent: {}
+[8.305731] (-) TimerEvent: {}
+[8.406700] (-) TimerEvent: {}
+[8.471764] (pi_hub_srvs) StdoutLine: {'line': b'[ 23%] Built target pi_hub_srvs__rosidl_generator_c\n'}
+[8.506834] (-) TimerEvent: {}
+[8.530162] (pi_hub_srvs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[8.606969] (-) TimerEvent: {}
+[8.707955] (-) TimerEvent: {}
+[8.809066] (-) TimerEvent: {}
+[8.911373] (-) TimerEvent: {}
+[8.940681] (pi_hub_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pi_hub_srvs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[9.011482] (-) TimerEvent: {}
+[9.114715] (-) TimerEvent: {}
+[9.179908] (pi_hub_srvs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/pi_hub_srvs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pi_hub_srvs/srv/detail/turn_on__type_support.cpp.o\x1b[0m\n'}
+[9.214835] (-) TimerEvent: {}
+[9.315556] (-) TimerEvent: {}
+[9.416532] (-) TimerEvent: {}
+[9.426767] (pi_hub_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pi_hub_srvs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[9.520223] (-) TimerEvent: {}
+[9.595130] (pi_hub_srvs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/pi_hub_srvs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pi_hub_srvs/srv/turn_off__type_support.cpp.o\x1b[0m\n'}
+[9.600218] (pi_hub_srvs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/pi_hub_srvs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pi_hub_srvs/srv/detail/dds_fastrtps/turn_on__type_support.cpp.o\x1b[0m\n'}
+[9.620373] (-) TimerEvent: {}
+[9.722329] (-) TimerEvent: {}
+[9.823126] (-) TimerEvent: {}
+[9.926492] (-) TimerEvent: {}
+[10.027546] (-) TimerEvent: {}
+[10.131025] (-) TimerEvent: {}
+[10.232574] (-) TimerEvent: {}
+[10.335956] (-) TimerEvent: {}
+[10.437822] (-) TimerEvent: {}
+[10.470805] (pi_hub_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pi_hub_srvs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[10.538158] (-) TimerEvent: {}
+[10.592629] (pi_hub_srvs) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX shared library libpi_hub_srvs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[10.638294] (-) TimerEvent: {}
+[10.643960] (pi_hub_srvs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/pi_hub_srvs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pi_hub_srvs/srv/detail/turn_on__type_support.c.o\x1b[0m\n'}
+[10.738421] (-) TimerEvent: {}
+[10.838870] (-) TimerEvent: {}
+[10.891523] (pi_hub_srvs) StdoutLine: {'line': b'[ 38%] Built target pi_hub_srvs__rosidl_typesupport_cpp\n'}
+[10.931839] (pi_hub_srvs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/pi_hub_srvs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pi_hub_srvs/srv/detail/turn_off__type_support.cpp.o\x1b[0m\n'}
+[10.938998] (-) TimerEvent: {}
+[10.944455] (pi_hub_srvs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding C object CMakeFiles/pi_hub_srvs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pi_hub_srvs/srv/detail/turn_off__type_support.c.o\x1b[0m\n'}
+[10.953970] (pi_hub_srvs) StdoutLine: {'line': b'[ 46%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[11.039112] (-) TimerEvent: {}
+[11.140176] (-) TimerEvent: {}
+[11.238714] (pi_hub_srvs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking C shared library libpi_hub_srvs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[11.240283] (-) TimerEvent: {}
+[11.341304] (-) TimerEvent: {}
+[11.442344] (-) TimerEvent: {}
+[11.542983] (-) TimerEvent: {}
+[11.573321] (pi_hub_srvs) StdoutLine: {'line': b'[ 48%] Built target pi_hub_srvs__rosidl_typesupport_introspection_c\n'}
+[11.638408] (pi_hub_srvs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/pi_hub_srvs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pi_hub_srvs/srv/detail/dds_fastrtps/turn_off__type_support.cpp.o\x1b[0m\n'}
+[11.643137] (-) TimerEvent: {}
+[11.743546] (-) TimerEvent: {}
+[11.843957] (-) TimerEvent: {}
+[11.944369] (-) TimerEvent: {}
+[12.054050] (-) TimerEvent: {}
+[12.157885] (-) TimerEvent: {}
+[12.258292] (-) TimerEvent: {}
+[12.370015] (-) TimerEvent: {}
+[12.470451] (-) TimerEvent: {}
+[12.570846] (-) TimerEvent: {}
+[12.671242] (-) TimerEvent: {}
+[12.771633] (-) TimerEvent: {}
+[12.872192] (-) TimerEvent: {}
+[12.973371] (-) TimerEvent: {}
+[13.072423] (pi_hub_srvs) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libpi_hub_srvs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[13.076764] (-) TimerEvent: {}
+[13.193392] (-) TimerEvent: {}
+[13.263511] (pi_hub_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pi_hub_srvs__rosidl_typesupport_c\x1b[0m\n'}
+[13.293512] (-) TimerEvent: {}
+[13.362691] (pi_hub_srvs) StdoutLine: {'line': b'[ 53%] Built target pi_hub_srvs__rosidl_typesupport_introspection_cpp\n'}
+[13.393665] (-) TimerEvent: {}
+[13.395281] (pi_hub_srvs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/pi_hub_srvs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pi_hub_srvs/srv/turn_off__type_support.cpp.o\x1b[0m\n'}
+[13.409348] (pi_hub_srvs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/pi_hub_srvs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pi_hub_srvs/srv/turn_on__type_support.cpp.o\x1b[0m\n'}
+[13.493787] (-) TimerEvent: {}
+[13.595969] (-) TimerEvent: {}
+[13.697458] (-) TimerEvent: {}
+[13.709316] (pi_hub_srvs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libpi_hub_srvs__rosidl_typesupport_c.so\x1b[0m\n'}
+[13.793878] (pi_hub_srvs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libpi_hub_srvs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[13.797586] (-) TimerEvent: {}
+[13.899380] (-) TimerEvent: {}
+[13.924573] (pi_hub_srvs) StdoutLine: {'line': b'[ 64%] Built target pi_hub_srvs__rosidl_typesupport_c\n'}
+[13.999506] (-) TimerEvent: {}
+[14.105096] (-) TimerEvent: {}
+[14.206347] (-) TimerEvent: {}
+[14.308900] (-) TimerEvent: {}
+[14.340920] (pi_hub_srvs) StdoutLine: {'line': b'[ 64%] Built target pi_hub_srvs__rosidl_typesupport_fastrtps_cpp\n'}
+[14.374623] (pi_hub_srvs) StdoutLine: {'line': b'[ 66%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[14.409021] (-) TimerEvent: {}
+[14.509460] (-) TimerEvent: {}
+[14.609828] (-) TimerEvent: {}
+[14.710197] (-) TimerEvent: {}
+[14.817823] (-) TimerEvent: {}
+[14.918223] (-) TimerEvent: {}
+[14.977175] (pi_hub_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pi_hub_srvs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[15.018347] (-) TimerEvent: {}
+[15.027221] (pi_hub_srvs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/pi_hub_srvs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pi_hub_srvs/srv/detail/turn_on__type_support_c.cpp.o\x1b[0m\n'}
+[15.028541] (pi_hub_srvs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/pi_hub_srvs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pi_hub_srvs/srv/detail/turn_off__type_support_c.cpp.o\x1b[0m\n'}
+[15.118473] (-) TimerEvent: {}
+[15.219794] (-) TimerEvent: {}
+[15.320233] (-) TimerEvent: {}
+[15.420639] (-) TimerEvent: {}
+[15.521072] (-) TimerEvent: {}
+[15.621447] (-) TimerEvent: {}
+[15.721829] (-) TimerEvent: {}
+[15.822188] (-) TimerEvent: {}
+[15.882631] (pi_hub_srvs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libpi_hub_srvs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[15.922308] (-) TimerEvent: {}
+[16.022721] (-) TimerEvent: {}
+[16.076717] (pi_hub_srvs) StdoutLine: {'line': b'[ 74%] Built target pi_hub_srvs__rosidl_typesupport_fastrtps_c\n'}
+[16.092211] (pi_hub_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pi_hub_srvs\x1b[0m\n'}
+[16.108337] (pi_hub_srvs) StdoutLine: {'line': b'[ 74%] Built target pi_hub_srvs\n'}
+[16.122856] (-) TimerEvent: {}
+[16.125038] (pi_hub_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pi_hub_srvs__py\x1b[0m\n'}
+[16.146430] (pi_hub_srvs) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[16.222970] (-) TimerEvent: {}
+[16.323883] (-) TimerEvent: {}
+[16.424223] (-) TimerEvent: {}
+[16.524619] (-) TimerEvent: {}
+[16.624960] (-) TimerEvent: {}
+[16.725308] (-) TimerEvent: {}
+[16.825621] (-) TimerEvent: {}
+[16.925953] (-) TimerEvent: {}
+[17.026267] (-) TimerEvent: {}
+[17.126609] (-) TimerEvent: {}
+[17.227030] (-) TimerEvent: {}
+[17.328337] (-) TimerEvent: {}
+[17.395193] (pi_hub_srvs) StdoutLine: {'line': b'[ 76%] Built target pi_hub_srvs__py\n'}
+[17.410753] (pi_hub_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pi_hub_srvs__python\x1b[0m\n'}
+[17.428460] (-) TimerEvent: {}
+[17.474684] (pi_hub_srvs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/pi_hub_srvs__python.dir/rosidl_generator_py/pi_hub_srvs/srv/_turn_on_s.c.o\x1b[0m\n'}
+[17.476536] (pi_hub_srvs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/pi_hub_srvs__python.dir/rosidl_generator_py/pi_hub_srvs/srv/_turn_off_s.c.o\x1b[0m\n'}
+[17.528581] (-) TimerEvent: {}
+[17.628972] (-) TimerEvent: {}
+[17.697723] (pi_hub_srvs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/pi_hub_srvs/libpi_hub_srvs__python.so\x1b[0m\n'}
+[17.729096] (-) TimerEvent: {}
+[17.790407] (pi_hub_srvs) StdoutLine: {'line': b'[ 84%] Built target pi_hub_srvs__python\n'}
+[17.812195] (pi_hub_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pi_hub_srvs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[17.812655] (pi_hub_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pi_hub_srvs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[17.834778] (-) TimerEvent: {}
+[17.880170] (pi_hub_srvs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/pi_hub_srvs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/pi_hub_srvs/_pi_hub_srvs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[17.885071] (pi_hub_srvs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/pi_hub_srvs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/pi_hub_srvs/_pi_hub_srvs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[17.935013] (-) TimerEvent: {}
+[18.036101] (-) TimerEvent: {}
+[18.137635] (-) TimerEvent: {}
+[18.232486] (pi_hub_srvs) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/pi_hub_srvs/pi_hub_srvs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[18.237768] (-) TimerEvent: {}
+[18.319301] (pi_hub_srvs) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/pi_hub_srvs/pi_hub_srvs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[18.337897] (-) TimerEvent: {}
+[18.410412] (pi_hub_srvs) StdoutLine: {'line': b'[ 94%] Built target pi_hub_srvs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[18.420972] (pi_hub_srvs) StdoutLine: {'line': b'[ 94%] Built target pi_hub_srvs__rosidl_typesupport_introspection_c__pyext\n'}
+[18.432945] (pi_hub_srvs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pi_hub_srvs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[18.438029] (-) TimerEvent: {}
+[18.484550] (pi_hub_srvs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/pi_hub_srvs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/pi_hub_srvs/_pi_hub_srvs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[18.538153] (-) TimerEvent: {}
+[18.636021] (pi_hub_srvs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/pi_hub_srvs/pi_hub_srvs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[18.638261] (-) TimerEvent: {}
+[18.725756] (pi_hub_srvs) StdoutLine: {'line': b'[100%] Built target pi_hub_srvs__rosidl_typesupport_c__pyext\n'}
+[18.738372] (-) TimerEvent: {}
+[18.745734] (pi_hub_srvs) CommandEnded: {'returncode': 0}
+[18.838531] (-) TimerEvent: {}
+[18.881608] (pi_hub_srvs) JobProgress: {'identifier': 'pi_hub_srvs', 'progress': 'install'}
+[18.901584] (pi_hub_srvs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs'], 'cwd': '/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs', 'env': OrderedDict([('HOSTNAME', '06ec87cb0e22'), ('GIT_ASKPASS', '/root/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/root/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/root/ros_ws/src'), ('TERM_PROGRAM_VERSION', '1.72.2'), ('CONF_DIR', '/root/config'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-2ba09a4c-c68d-4974-a44c-f809eede2120.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/root/ros_ws/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-6b755427f3799523f87b3f72012fa30ae6046065.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-6b755427f3799523f87b3f72012fa30ae6046065.sock","/root/.gnupg/S.gpg-agent"]'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-949c39e8bc.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-6b755427f3799523f87b3f72012fa30ae6046065.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy:/root/ros_ws/install/time_schedule:/root/ros_ws/install/pump_control:/root/ros_ws/install/pi_hub:/root/ros_ws/install/led_control:/root/ros_ws/install/gpio_conf'), ('SHELL', '/bin/bash'), ('ROS_WS', '/root/ros_ws'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/ros_ws/src/pi_hub_srvs/build/pi_hub_srvs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/root/ros_ws/install/time_schedule/lib/python3.8/site-packages:/root/ros_ws/install/pump_control/lib/python3.8/site-packages:/root/ros_ws/install/pi_hub/lib/python3.8/site-packages:/root/ros_ws/install/led_control/lib/python3.8/site-packages:/root/ros_ws/install/gpio_conf/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy:/root/ros_ws/install/time_schedule:/root/ros_ws/install/pump_control:/root/ros_ws/install/pi_hub:/root/ros_ws/install/led_control:/root/ros_ws/install/gpio_conf')]), 'shell': False}
+[18.915510] (pi_hub_srvs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.915944] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/ament_index/resource_index/rosidl_interfaces/pi_hub_srvs\n'}
+[18.916217] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs\n'}
+[18.916477] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/msg\n'}
+[18.916726] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/msg/rosidl_generator_c__visibility_control.h\n'}
+[18.917003] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv\n'}
+[18.917206] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail\n'}
+[18.917408] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__type_support.h\n'}
+[18.917599] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__functions.h\n'}
+[18.917762] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__functions.c\n'}
+[18.918002] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__functions.h\n'}
+[18.918188] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__struct.h\n'}
+[18.918411] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__struct.h\n'}
+[18.918654] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__functions.c\n'}
+[18.918909] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__type_support.h\n'}
+[18.919151] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/turn_off.h\n'}
+[18.919329] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/turn_on.h\n'}
+[18.919601] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/environment/library_path.sh\n'}
+[18.920034] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/environment/library_path.dsv\n'}
+[18.920755] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_generator_c.so\n'}
+[18.921973] (pi_hub_srvs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_generator_c.so" to ""\n'}
+[18.922294] (pi_hub_srvs) StdoutLine: {'line': b'-- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs\n'}
+[18.922491] (pi_hub_srvs) StdoutLine: {'line': b'-- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/msg\n'}
+[18.923186] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[18.923483] (pi_hub_srvs) StdoutLine: {'line': b'-- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv\n'}
+[18.923841] (pi_hub_srvs) StdoutLine: {'line': b'-- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail\n'}
+[18.924121] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__rosidl_typesupport_fastrtps_c.h\n'}
+[18.924376] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__rosidl_typesupport_fastrtps_c.h\n'}
+[18.924862] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_fastrtps_c.so\n'}
+[18.925284] (pi_hub_srvs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[18.925646] (pi_hub_srvs) StdoutLine: {'line': b'-- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs\n'}
+[18.925916] (pi_hub_srvs) StdoutLine: {'line': b'-- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/msg\n'}
+[18.926097] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[18.926388] (pi_hub_srvs) StdoutLine: {'line': b'-- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv\n'}
+[18.926555] (pi_hub_srvs) StdoutLine: {'line': b'-- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail\n'}
+[18.926745] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.926953] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/dds_fastrtps\n'}
+[18.927168] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.927432] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[18.927815] (pi_hub_srvs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[18.928166] (pi_hub_srvs) StdoutLine: {'line': b'-- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs\n'}
+[18.928497] (pi_hub_srvs) StdoutLine: {'line': b'-- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/msg\n'}
+[18.928779] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[18.929077] (pi_hub_srvs) StdoutLine: {'line': b'-- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv\n'}
+[18.929239] (pi_hub_srvs) StdoutLine: {'line': b'-- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail\n'}
+[18.929528] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__type_support.c\n'}
+[18.929731] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__rosidl_typesupport_introspection_c.h\n'}
+[18.929896] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__type_support.c\n'}
+[18.930120] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__rosidl_typesupport_introspection_c.h\n'}
+[18.930326] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_introspection_c.so\n'}
+[18.930620] (pi_hub_srvs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[18.930966] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_c.so\n'}
+[18.931775] (pi_hub_srvs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_c.so" to ""\n'}
+[18.932283] (pi_hub_srvs) StdoutLine: {'line': b'-- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs\n'}
+[18.932595] (pi_hub_srvs) StdoutLine: {'line': b'-- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv\n'}
+[18.932905] (pi_hub_srvs) StdoutLine: {'line': b'-- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail\n'}
+[18.933220] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__builder.hpp\n'}
+[18.933732] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__traits.hpp\n'}
+[18.934020] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__struct.hpp\n'}
+[18.934299] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__builder.hpp\n'}
+[18.934653] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__struct.hpp\n'}
+[18.934958] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__traits.hpp\n'}
+[18.935265] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/turn_off.hpp\n'}
+[18.935448] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/turn_on.hpp\n'}
+[18.935642] (pi_hub_srvs) StdoutLine: {'line': b'-- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs\n'}
+[18.935895] (pi_hub_srvs) StdoutLine: {'line': b'-- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv\n'}
+[18.936071] (pi_hub_srvs) StdoutLine: {'line': b'-- Up-to-date: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail\n'}
+[18.936248] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__type_support.cpp\n'}
+[18.936457] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_on__rosidl_typesupport_introspection_cpp.hpp\n'}
+[18.936680] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__type_support.cpp\n'}
+[18.936928] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/include/pi_hub_srvs/srv/detail/turn_off__rosidl_typesupport_introspection_cpp.hpp\n'}
+[18.937130] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_introspection_cpp.so\n'}
+[18.937391] (pi_hub_srvs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[18.937549] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_cpp.so\n'}
+[18.938212] (pi_hub_srvs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__rosidl_typesupport_cpp.so" to ""\n'}
+[18.938550] (-) TimerEvent: {}
+[18.939571] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/environment/pythonpath.sh\n'}
+[18.939873] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/environment/pythonpath.dsv\n'}
+[18.940069] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/__init__.py\n'}
+[19.036728] (pi_hub_srvs) StdoutLine: {'line': b"Compiling '/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/__init__.py'...\n"}
+[19.038719] (-) TimerEvent: {}
+[19.049046] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/srv\n'}
+[19.049496] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/srv/_turn_off_s.c\n'}
+[19.049769] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/srv/_turn_off.py\n'}
+[19.050023] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/srv/__init__.py\n'}
+[19.050271] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/srv/_turn_on.py\n'}
+[19.050557] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/srv/_turn_on_s.c\n'}
+[19.051041] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/pi_hub_srvs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[19.052599] (pi_hub_srvs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/pi_hub_srvs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[19.052947] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/pi_hub_srvs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[19.054955] (pi_hub_srvs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/pi_hub_srvs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[19.056086] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/pi_hub_srvs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[19.057609] (pi_hub_srvs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/python3.8/site-packages/pi_hub_srvs/pi_hub_srvs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[19.058172] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__python.so\n'}
+[19.061207] (pi_hub_srvs) StdoutLine: {'line': b'-- Set runtime path of "/root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/lib/libpi_hub_srvs__python.so" to ""\n'}
+[19.062606] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/srv/TurnOn.idl\n'}
+[19.063546] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/srv/TurnOff.idl\n'}
+[19.064404] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/srv/TurnOn.srv\n'}
+[19.065095] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/srv/TurnOn_Request.msg\n'}
+[19.065579] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/srv/TurnOn_Response.msg\n'}
+[19.066265] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/srv/TurnOff.srv\n'}
+[19.066654] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/srv/TurnOff_Request.msg\n'}
+[19.067208] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/srv/TurnOff_Response.msg\n'}
+[19.067675] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/ament_index/resource_index/package_run_dependencies/pi_hub_srvs\n'}
+[19.068131] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/ament_index/resource_index/parent_prefix_path/pi_hub_srvs\n'}
+[19.068615] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/environment/ament_prefix_path.sh\n'}
+[19.069241] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/environment/ament_prefix_path.dsv\n'}
+[19.069739] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/environment/path.sh\n'}
+[19.070119] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/environment/path.dsv\n'}
+[19.070451] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/local_setup.bash\n'}
+[19.072773] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/local_setup.sh\n'}
+[19.073832] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/local_setup.zsh\n'}
+[19.074628] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/local_setup.dsv\n'}
+[19.075996] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/package.dsv\n'}
+[19.076375] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/ament_index/resource_index/packages/pi_hub_srvs\n'}
+[19.076560] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_generator_cExport.cmake\n'}
+[19.076804] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_generator_cExport-noconfig.cmake\n'}
+[19.077031] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[19.077208] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[19.077427] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_typesupport_cExport.cmake\n'}
+[19.077600] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[19.077849] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_generator_cppExport.cmake\n'}
+[19.078061] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[19.078236] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[19.078479] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_typesupport_cppExport.cmake\n'}
+[19.078807] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[19.079199] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/rosidl_cmake-extras.cmake\n'}
+[19.079476] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[19.079740] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[19.080001] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[19.080311] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[19.080609] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[19.080912] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[19.081217] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvsConfig.cmake\n'}
+[19.081533] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/cmake/pi_hub_srvsConfig-version.cmake\n'}
+[19.081801] (pi_hub_srvs) StdoutLine: {'line': b'-- Installing: /root/ros_ws/src/pi_hub_srvs/install/pi_hub_srvs/share/pi_hub_srvs/package.xml\n'}
+[19.087162] (pi_hub_srvs) CommandEnded: {'returncode': 0}
+[19.138997] (-) TimerEvent: {}
+[19.239661] (-) TimerEvent: {}
+[19.300742] (pi_hub_srvs) JobEnded: {'identifier': 'pi_hub_srvs', 'rc': 0}
+[19.303622] (-) EventReactorShutdown: {}

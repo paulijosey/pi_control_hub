@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pi_hub_srvs/srv/TurnOn.srv
+// generated code does not contain a copyright notice
+
+
+module pi_hub_srvs {
+  module srv {
+    struct TurnOn_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct TurnOn_Response {
+      boolean success;
+    };
+  };
+};
