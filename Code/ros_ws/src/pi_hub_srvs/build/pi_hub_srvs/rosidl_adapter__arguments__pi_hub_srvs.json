@@ -1,7 +1,0 @@
-{
-  "package_name": "pi_hub_srvs",
-  "non_idl_tuples": [
-    "/root/ros_ws/src/pi_hub_srvs:srv/TurnOn.srv",
-    "/root/ros_ws/src/pi_hub_srvs:srv/TurnOff.srv"
-  ]
-}

@@ -1,8 +1,0 @@
-srv/TurnOff.idl
-srv/TurnOff.srv
-srv/TurnOff_Request.msg
-srv/TurnOff_Response.msg
-srv/TurnOn.idl
-srv/TurnOn.srv
-srv/TurnOn_Request.msg
-srv/TurnOn_Response.msg
