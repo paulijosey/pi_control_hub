@@ -1,0 +1,41 @@
+[0.972s] Invoking command in '/root/ros_ws/src/gpio_conf': PYTHONPATH=/root/ros_ws/build/gpio_conf/prefix_override:/root/ros_ws/install/gpio_conf/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/gpio_conf build --build-base /root/ros_ws/build/gpio_conf/build install --record /root/ros_ws/build/gpio_conf/install.log --install-scripts $base/lib/gpio_conf --single-version-externally-managed
+[1.100s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[1.100s]   warnings.warn(
+[1.105s] running egg_info
+[1.106s] creating ../../build/gpio_conf/gpio_conf.egg-info
+[1.106s] writing ../../build/gpio_conf/gpio_conf.egg-info/PKG-INFO
+[1.106s] writing dependency_links to ../../build/gpio_conf/gpio_conf.egg-info/dependency_links.txt
+[1.106s] writing entry points to ../../build/gpio_conf/gpio_conf.egg-info/entry_points.txt
+[1.106s] writing requirements to ../../build/gpio_conf/gpio_conf.egg-info/requires.txt
+[1.106s] writing top-level names to ../../build/gpio_conf/gpio_conf.egg-info/top_level.txt
+[1.106s] writing manifest file '../../build/gpio_conf/gpio_conf.egg-info/SOURCES.txt'
+[1.107s] reading manifest file '../../build/gpio_conf/gpio_conf.egg-info/SOURCES.txt'
+[1.108s] writing manifest file '../../build/gpio_conf/gpio_conf.egg-info/SOURCES.txt'
+[1.108s] running build
+[1.108s] running build_py
+[1.108s] creating /root/ros_ws/build/gpio_conf/build
+[1.108s] creating /root/ros_ws/build/gpio_conf/build/lib
+[1.108s] creating /root/ros_ws/build/gpio_conf/build/lib/gpio_conf
+[1.108s] copying gpio_conf/gpio_conf_node.py -> /root/ros_ws/build/gpio_conf/build/lib/gpio_conf
+[1.109s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.109s]   warnings.warn(
+[1.109s] copying gpio_conf/__init__.py -> /root/ros_ws/build/gpio_conf/build/lib/gpio_conf
+[1.109s] running install
+[1.109s] running install_lib
+[1.110s] creating /root/ros_ws/install/gpio_conf/lib/python3.10/site-packages/gpio_conf
+[1.110s] copying /root/ros_ws/build/gpio_conf/build/lib/gpio_conf/gpio_conf_node.py -> /root/ros_ws/install/gpio_conf/lib/python3.10/site-packages/gpio_conf
+[1.110s] copying /root/ros_ws/build/gpio_conf/build/lib/gpio_conf/__init__.py -> /root/ros_ws/install/gpio_conf/lib/python3.10/site-packages/gpio_conf
+[1.110s] byte-compiling /root/ros_ws/install/gpio_conf/lib/python3.10/site-packages/gpio_conf/gpio_conf_node.py to gpio_conf_node.cpython-310.pyc
+[1.110s] byte-compiling /root/ros_ws/install/gpio_conf/lib/python3.10/site-packages/gpio_conf/__init__.py to __init__.cpython-310.pyc
+[1.110s] running install_data
+[1.110s] creating /root/ros_ws/install/gpio_conf/share/ament_index
+[1.110s] creating /root/ros_ws/install/gpio_conf/share/ament_index/resource_index
+[1.110s] creating /root/ros_ws/install/gpio_conf/share/ament_index/resource_index/packages
+[1.111s] copying resource/gpio_conf -> /root/ros_ws/install/gpio_conf/share/ament_index/resource_index/packages
+[1.111s] copying package.xml -> /root/ros_ws/install/gpio_conf/share/gpio_conf
+[1.111s] running install_egg_info
+[1.112s] Copying ../../build/gpio_conf/gpio_conf.egg-info to /root/ros_ws/install/gpio_conf/lib/python3.10/site-packages/gpio_conf-0.0.0-py3.10.egg-info
+[1.112s] running install_scripts
+[1.128s] Installing gpio_conf_node script to /root/ros_ws/install/gpio_conf/lib/gpio_conf
+[1.128s] writing list of installed files to '/root/ros_ws/build/gpio_conf/install.log'
+[1.153s] Invoked command in '/root/ros_ws/src/gpio_conf' returned '0': PYTHONPATH=/root/ros_ws/build/gpio_conf/prefix_override:/root/ros_ws/install/gpio_conf/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/gpio_conf build --build-base /root/ros_ws/build/gpio_conf/build install --record /root/ros_ws/build/gpio_conf/install.log --install-scripts $base/lib/gpio_conf --single-version-externally-managed

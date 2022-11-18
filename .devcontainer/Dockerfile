@@ -1,4 +1,4 @@
-ARG ros_version='foxy'
+ARG ros_version='humble'
 FROM ros:${ros_version}
 
 ENV ROS_WS=/root/ros_ws

@@ -1,6 +1,6 @@
 # generated from ament_cmake_export_include_directories/cmake/ament_cmake_export_include_directories-extras.cmake.in
 
-set(_exported_include_dirs "${pi_hub_srvs_DIR}/../../../include")
+set(_exported_include_dirs "${pi_hub_srvs_DIR}/../../../include/pi_hub_srvs")
 
 # append include directories to pi_hub_srvs_INCLUDE_DIRS
 # warn about not existing paths
