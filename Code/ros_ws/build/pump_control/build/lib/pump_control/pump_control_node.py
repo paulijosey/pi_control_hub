@@ -1,15 +1,21 @@
 # ROS libs
 import rclpy
 from rclpy.node import Node
+# common libs
+import time
+import lgpio
+
+# TODO: read this from config
+PUMP_HEADER = 15
 
 from pi_hub_srvs.srv import Control     # check service definition in pi_hub_srvs
 
 # lets create a class for the pump controler
 class PumpController(Node):
 
-    def __init__(self):
+    def __init__(self, header_open_):
         super().__init__('pump_controller')
-
+        self.header_open = header_open_
         # init service that uses:
         #       "Control" service type,
         #       "pump_control" service name (thats the one we will use on ROS to call it)
@@ -42,6 +48,8 @@ class PumpController(Node):
         config file)
         '''
         # TODO
+        # Turn the GPIO pin on
+        lgpio.gpio_write(self.header_open, PUMP_HEADER, 1)
         self.get_logger().info('Turn pump on')
         return True
 
@@ -51,6 +59,8 @@ class PumpController(Node):
         config file)
         '''
         # TODO
+        # Turn the GPIO pin off
+        lgpio.gpio_write(self.header_open, PUMP_HEADER, 0)
         self.get_logger().info('Turn pump off')
         return True
 
@@ -58,7 +68,11 @@ class PumpController(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    pump_control_service = PumpController()
+    # open the gpio chip and set the LED pin as output
+    header_open = lgpio.gpiochip_open(0)
+    lgpio.gpio_claim_output(header_open, PUMP_HEADER)
+    # Start the service
+    pump_control_service = PumpController(header_open)
     rclpy.spin(pump_control_service)
     rclpy.shutdown()
 

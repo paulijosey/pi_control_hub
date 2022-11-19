@@ -1,0 +1,28 @@
+[1.104s] Invoking command in '/root/ros_ws/src/pi_hub': PYTHONPATH=/root/ros_ws/build/pi_hub/prefix_override:/root/ros_ws/install/pi_hub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pi_hub build --build-base /root/ros_ws/build/pi_hub/build install --record /root/ros_ws/build/pi_hub/install.log --install-scripts $base/lib/pi_hub --single-version-externally-managed
+[1.245s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[1.246s]   warnings.warn(
+[1.252s] running egg_info
+[1.252s] writing ../../build/pi_hub/pi_hub.egg-info/PKG-INFO
+[1.252s] writing dependency_links to ../../build/pi_hub/pi_hub.egg-info/dependency_links.txt
+[1.252s] writing entry points to ../../build/pi_hub/pi_hub.egg-info/entry_points.txt
+[1.253s] writing requirements to ../../build/pi_hub/pi_hub.egg-info/requires.txt
+[1.253s] writing top-level names to ../../build/pi_hub/pi_hub.egg-info/top_level.txt
+[1.254s] reading manifest file '../../build/pi_hub/pi_hub.egg-info/SOURCES.txt'
+[1.254s] writing manifest file '../../build/pi_hub/pi_hub.egg-info/SOURCES.txt'
+[1.255s] running build
+[1.255s] running build_py
+[1.255s] copying pi_hub/pi_hub_node.py -> /root/ros_ws/build/pi_hub/build/lib/pi_hub
+[1.255s] running install
+[1.256s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.256s]   warnings.warn(
+[1.256s] running install_lib
+[1.256s] copying /root/ros_ws/build/pi_hub/build/lib/pi_hub/pi_hub_node.py -> /root/ros_ws/install/pi_hub/lib/python3.10/site-packages/pi_hub
+[1.257s] byte-compiling /root/ros_ws/install/pi_hub/lib/python3.10/site-packages/pi_hub/pi_hub_node.py to pi_hub_node.cpython-310.pyc
+[1.257s] running install_data
+[1.257s] running install_egg_info
+[1.259s] removing '/root/ros_ws/install/pi_hub/lib/python3.10/site-packages/pi_hub-0.0.0-py3.10.egg-info' (and everything under it)
+[1.259s] Copying ../../build/pi_hub/pi_hub.egg-info to /root/ros_ws/install/pi_hub/lib/python3.10/site-packages/pi_hub-0.0.0-py3.10.egg-info
+[1.259s] running install_scripts
+[1.278s] Installing pi_hub_node script to /root/ros_ws/install/pi_hub/lib/pi_hub
+[1.278s] writing list of installed files to '/root/ros_ws/build/pi_hub/install.log'
+[1.306s] Invoked command in '/root/ros_ws/src/pi_hub' returned '0': PYTHONPATH=/root/ros_ws/build/pi_hub/prefix_override:/root/ros_ws/install/pi_hub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pi_hub build --build-base /root/ros_ws/build/pi_hub/build install --record /root/ros_ws/build/pi_hub/install.log --install-scripts $base/lib/pi_hub --single-version-externally-managed

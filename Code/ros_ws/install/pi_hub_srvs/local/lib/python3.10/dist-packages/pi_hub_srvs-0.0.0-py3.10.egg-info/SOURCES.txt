@@ -4,3 +4,7 @@ pi_hub_srvs.egg-info/PKG-INFO
 pi_hub_srvs.egg-info/SOURCES.txt
 pi_hub_srvs.egg-info/dependency_links.txt
 pi_hub_srvs.egg-info/top_level.txt
+pi_hub_srvs/srv/__init__.py
+pi_hub_srvs/srv/_control.py
+pi_hub_srvs/srv/_turn_off.py
+pi_hub_srvs/srv/_turn_on.py

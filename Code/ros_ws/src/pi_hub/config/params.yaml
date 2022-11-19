@@ -1,0 +1,4 @@
+/pi_hub:
+  ros__parameters:
+    gpio_led: 18
+    gpio_pump: 15

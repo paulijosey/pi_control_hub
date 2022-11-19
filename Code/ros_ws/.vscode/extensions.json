@@ -7,7 +7,6 @@
         "ms-vscode.cmake-tools",
         "cschlosser.doxdocgen",
         "codingq.file-header-comments",
-        "ms-iot.vscode-ros",
-        "ms-python.python"
+        "ms-iot.vscode-ros"
     ]
 }

@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'pi_hub_node = pi_hub.pi_hub_node:main'
         ],
     },
 )
