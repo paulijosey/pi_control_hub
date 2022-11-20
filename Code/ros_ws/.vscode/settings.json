@@ -14,7 +14,7 @@
         100
     ],
     "fileheader.Author": "Paul Joseph",
-    "fileheader.Email": "josephp@student.ethz.ch",
+    "fileheader.Email": "paul.joseph241@gmail.com",
     "fileheader.LastModifiedBy": "Paul Joseph",
     "cmake.configureOnOpen": false,
     "cmake.sourceDirectory": "${workspaceFolder}/src/pi_hub_srvs",
