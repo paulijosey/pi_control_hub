@@ -1,6 +1,9 @@
 pump_control_node:
   ros__parameters:
     gpio: 15
+    pump_intervals: 
+      on:  ['1:00:00', '2:00:00']
+      off: ['1:10:00', '2:10:00']
 
 led_control_node:
   ros__parameters:

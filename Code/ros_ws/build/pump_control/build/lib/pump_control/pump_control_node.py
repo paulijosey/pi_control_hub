@@ -45,13 +45,29 @@ class PumpController(Node):
         '''
         # decalre ROS parameters
         self.declare_parameter('gpio', 15)
+        self.declare_parameter('pump_intervals.on', ['0:00:00'])
+        self.declare_parameter('pump_intervals.off', ['0:00:00'])
 
         # set the parameters to values
         self.gpio = self.get_parameter('gpio').get_parameter_value().integer_value
+        on_times_str = self.get_parameter('pump_intervals.on').get_parameter_value().string_array_value
+        off_times_str = self.get_parameter('pump_intervals.off').get_parameter_value().string_array_value
+
+        # check if on and of times are equal length
+        assert len(on_times_str) == len(off_times_str)
 
         # log output of params we are using
-        self.get_logger().info("gpio: %s," %
-                                (str(self.gpio)))
+        self.get_logger().info("gpio: %s," % (str(self.gpio)))
+        self.get_logger().info("pump_intervals.on: %s," % (str(on_times_str)))
+        self.get_logger().info("pump_intervals.off: %s," % (str(off_times_str)))
+
+        # hacky transform from arrays of strings to array of time values
+        # because ROS2 doesn't have time arrays as parameter types
+        self.on_intervals = [[0 for i in range(2)] for j in range(len(on_times_str))]
+        for i in range(len(on_times_str)):
+            self.on_intervals[0][i] = time.strptime(on_times_str[i], '%H:%M:%S')
+            self.on_intervals[1][i] = time.strptime(off_times_str[i], '%H:%M:%S')
+
 
     def init_services(self):
         '''
