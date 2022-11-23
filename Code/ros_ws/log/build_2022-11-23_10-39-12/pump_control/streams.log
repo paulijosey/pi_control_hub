@@ -1,0 +1,25 @@
+[1.870s] Invoking command in '/root/ros_ws/src/pump_control': PYTHONPATH=/root/ros_ws/build/pump_control/prefix_override:/root/ros_ws/install/pump_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pump_control build --build-base /root/ros_ws/build/pump_control/build install --record /root/ros_ws/build/pump_control/install.log --install-scripts $base/lib/pump_control --single-version-externally-managed
+[2.869s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.871s]   warnings.warn(
+[2.890s] running egg_info
+[2.892s] writing ../../build/pump_control/pump_control.egg-info/PKG-INFO
+[2.894s] writing dependency_links to ../../build/pump_control/pump_control.egg-info/dependency_links.txt
+[2.895s] writing entry points to ../../build/pump_control/pump_control.egg-info/entry_points.txt
+[2.897s] writing requirements to ../../build/pump_control/pump_control.egg-info/requires.txt
+[2.898s] writing top-level names to ../../build/pump_control/pump_control.egg-info/top_level.txt
+[2.900s] reading manifest file '../../build/pump_control/pump_control.egg-info/SOURCES.txt'
+[2.902s] writing manifest file '../../build/pump_control/pump_control.egg-info/SOURCES.txt'
+[2.903s] running build
+[2.903s] running build_py
+[2.904s] running install
+[2.905s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.905s]   warnings.warn(
+[2.906s] running install_lib
+[2.908s] running install_data
+[2.909s] running install_egg_info
+[2.917s] removing '/root/ros_ws/install/pump_control/lib/python3.10/site-packages/pump_control-0.0.0-py3.10.egg-info' (and everything under it)
+[2.918s] Copying ../../build/pump_control/pump_control.egg-info to /root/ros_ws/install/pump_control/lib/python3.10/site-packages/pump_control-0.0.0-py3.10.egg-info
+[2.923s] running install_scripts
+[3.028s] Installing pump_control_node script to /root/ros_ws/install/pump_control/lib/pump_control
+[3.029s] writing list of installed files to '/root/ros_ws/build/pump_control/install.log'
+[3.170s] Invoked command in '/root/ros_ws/src/pump_control' returned '0': PYTHONPATH=/root/ros_ws/build/pump_control/prefix_override:/root/ros_ws/install/pump_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pump_control build --build-base /root/ros_ws/build/pump_control/build install --record /root/ros_ws/build/pump_control/install.log --install-scripts $base/lib/pump_control --single-version-externally-managed

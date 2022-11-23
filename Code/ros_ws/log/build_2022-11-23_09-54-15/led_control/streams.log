@@ -1,0 +1,25 @@
+[2.149s] Invoking command in '/root/ros_ws/src/led_control': PYTHONPATH=/root/ros_ws/build/led_control/prefix_override:/root/ros_ws/install/led_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/led_control build --build-base /root/ros_ws/build/led_control/build install --record /root/ros_ws/build/led_control/install.log --install-scripts $base/lib/led_control --single-version-externally-managed
+[2.710s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.711s]   warnings.warn(
+[2.734s] running egg_info
+[2.736s] writing ../../build/led_control/led_control.egg-info/PKG-INFO
+[2.737s] writing dependency_links to ../../build/led_control/led_control.egg-info/dependency_links.txt
+[2.737s] writing entry points to ../../build/led_control/led_control.egg-info/entry_points.txt
+[2.747s] writing requirements to ../../build/led_control/led_control.egg-info/requires.txt
+[2.747s] writing top-level names to ../../build/led_control/led_control.egg-info/top_level.txt
+[2.747s] reading manifest file '../../build/led_control/led_control.egg-info/SOURCES.txt'
+[2.748s] writing manifest file '../../build/led_control/led_control.egg-info/SOURCES.txt'
+[2.748s] running build
+[2.748s] running build_py
+[2.749s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.749s]   warnings.warn(
+[2.749s] running install
+[2.749s] running install_lib
+[2.752s] running install_data
+[2.754s] running install_egg_info
+[2.764s] removing '/root/ros_ws/install/led_control/lib/python3.10/site-packages/led_control-0.0.0-py3.10.egg-info' (and everything under it)
+[2.764s] Copying ../../build/led_control/led_control.egg-info to /root/ros_ws/install/led_control/lib/python3.10/site-packages/led_control-0.0.0-py3.10.egg-info
+[2.768s] running install_scripts
+[2.835s] Installing led_control_node script to /root/ros_ws/install/led_control/lib/led_control
+[2.836s] writing list of installed files to '/root/ros_ws/build/led_control/install.log'
+[2.922s] Invoked command in '/root/ros_ws/src/led_control' returned '0': PYTHONPATH=/root/ros_ws/build/led_control/prefix_override:/root/ros_ws/install/led_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/led_control build --build-base /root/ros_ws/build/led_control/build install --record /root/ros_ws/build/led_control/install.log --install-scripts $base/lib/led_control --single-version-externally-managed

@@ -1,0 +1,25 @@
+[1.581s] Invoking command in '/root/ros_ws/src/pi_hub': AMENT_PREFIX_PATH=/root/ros_ws/install/pump_control:/root/ros_ws/install/led_control:/root/ros_ws/install/time_schedule:/root/ros_ws/install/pi_hub:/root/ros_ws/install/pi_hub_srvs:/root/ros_ws/install/gpio_conf:/opt/ros/humble PYTHONPATH=/root/ros_ws/build/pi_hub/prefix_override:/root/ros_ws/install/pi_hub/lib/python3.10/site-packages:/root/ros_ws/install/pump_control/lib/python3.10/site-packages:/root/ros_ws/install/led_control/lib/python3.10/site-packages:/root/ros_ws/install/time_schedule/lib/python3.10/site-packages:/root/ros_ws/install/pi_hub/lib/python3.10/site-packages:/root/ros_ws/install/pi_hub_srvs/local/lib/python3.10/dist-packages:/root/ros_ws/install/gpio_conf/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/pi_hub build --build-base /root/ros_ws/build/pi_hub/build install --record /root/ros_ws/build/pi_hub/install.log --install-scripts $base/lib/pi_hub --single-version-externally-managed
+[1.886s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[1.886s]   warnings.warn(
+[1.897s] running egg_info
+[1.898s] writing ../../build/pi_hub/pi_hub.egg-info/PKG-INFO
+[1.898s] writing dependency_links to ../../build/pi_hub/pi_hub.egg-info/dependency_links.txt
+[1.898s] writing entry points to ../../build/pi_hub/pi_hub.egg-info/entry_points.txt
+[1.899s] writing requirements to ../../build/pi_hub/pi_hub.egg-info/requires.txt
+[1.899s] writing top-level names to ../../build/pi_hub/pi_hub.egg-info/top_level.txt
+[1.902s] reading manifest file '../../build/pi_hub/pi_hub.egg-info/SOURCES.txt'
+[1.904s] writing manifest file '../../build/pi_hub/pi_hub.egg-info/SOURCES.txt'
+[1.904s] running build
+[1.905s] running build_py
+[1.905s] running install
+[1.905s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.905s]   warnings.warn(
+[1.906s] running install_lib
+[1.908s] running install_data
+[1.909s] running install_egg_info
+[1.912s] removing '/root/ros_ws/install/pi_hub/lib/python3.10/site-packages/pi_hub-0.0.0-py3.10.egg-info' (and everything under it)
+[1.913s] Copying ../../build/pi_hub/pi_hub.egg-info to /root/ros_ws/install/pi_hub/lib/python3.10/site-packages/pi_hub-0.0.0-py3.10.egg-info
+[1.915s] running install_scripts
+[1.953s] Installing pi_hub_node script to /root/ros_ws/install/pi_hub/lib/pi_hub
+[1.954s] writing list of installed files to '/root/ros_ws/build/pi_hub/install.log'
+[1.990s] Invoked command in '/root/ros_ws/src/pi_hub' returned '0': AMENT_PREFIX_PATH=/root/ros_ws/install/pump_control:/root/ros_ws/install/led_control:/root/ros_ws/install/time_schedule:/root/ros_ws/install/pi_hub:/root/ros_ws/install/pi_hub_srvs:/root/ros_ws/install/gpio_conf:/opt/ros/humble PYTHONPATH=/root/ros_ws/build/pi_hub/prefix_override:/root/ros_ws/install/pi_hub/lib/python3.10/site-packages:/root/ros_ws/install/pump_control/lib/python3.10/site-packages:/root/ros_ws/install/led_control/lib/python3.10/site-packages:/root/ros_ws/install/time_schedule/lib/python3.10/site-packages:/root/ros_ws/install/pi_hub/lib/python3.10/site-packages:/root/ros_ws/install/pi_hub_srvs/local/lib/python3.10/dist-packages:/root/ros_ws/install/gpio_conf/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/pi_hub build --build-base /root/ros_ws/build/pi_hub/build install --record /root/ros_ws/build/pi_hub/install.log --install-scripts $base/lib/pi_hub --single-version-externally-managed
