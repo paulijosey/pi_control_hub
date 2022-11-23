@@ -16,7 +16,6 @@ from pi_hub_srvs.srv    import Control     # check service definition in pi_hub_
 from std_msgs.msg       import Bool
 
 # common libs
-import time
 import lgpio
 from datetime           import datetime
 
