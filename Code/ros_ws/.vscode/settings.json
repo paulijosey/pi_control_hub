@@ -14,10 +14,10 @@
         100
     ],
     "fileheader.Author": "Paul Joseph",
-    "fileheader.Email": "josephp@student.ethz.ch",
+    "fileheader.Email": "paul.joseph241@gmail.com",
     "fileheader.LastModifiedBy": "Paul Joseph",
     "cmake.configureOnOpen": false,
-    "cmake.sourceDirectory": "${workspaceFolder}/src/pump_control",
+    "cmake.sourceDirectory": "${workspaceFolder}/src/pi_hub_srvs",
     "python.analysis.extraPaths": [
         "/opt/ros/kinetic/lib/python2.7/dist-packages"
     ]

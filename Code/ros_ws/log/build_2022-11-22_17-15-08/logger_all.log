@@ -1,0 +1,298 @@
+[0.481s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.482s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f6812da6a10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f681371fa60>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f681371fa60>>, mixin_verb=('build',))
+[0.524s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.525s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.526s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.526s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.526s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.526s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.526s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.526s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.526s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/ros_ws'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.545s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/led_control) by extensions ['ignore', 'ignore_ament_install']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/led_control) by extension 'ignore'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/led_control) by extension 'ignore_ament_install'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/led_control) by extensions ['colcon_pkg']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/led_control) by extension 'colcon_pkg'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/led_control) by extensions ['colcon_meta']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/led_control) by extension 'colcon_meta'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(src/led_control) by extensions ['ros']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(src/led_control) by extension 'ros'
+[0.552s] DEBUG:colcon.colcon_core.package_identification:Package 'src/led_control' with type 'ros.ament_python' and name 'led_control'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/pi_hub) by extensions ['ignore', 'ignore_ament_install']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/pi_hub) by extension 'ignore'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/pi_hub) by extension 'ignore_ament_install'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/pi_hub) by extensions ['colcon_pkg']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/pi_hub) by extension 'colcon_pkg'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/pi_hub) by extensions ['colcon_meta']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/pi_hub) by extension 'colcon_meta'
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/pi_hub) by extensions ['ros']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/pi_hub) by extension 'ros'
+[0.555s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pi_hub' with type 'ros.ament_python' and name 'pi_hub'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/pi_hub_srvs) by extensions ['ignore', 'ignore_ament_install']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/pi_hub_srvs) by extension 'ignore'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/pi_hub_srvs) by extension 'ignore_ament_install'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/pi_hub_srvs) by extensions ['colcon_pkg']
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/pi_hub_srvs) by extension 'colcon_pkg'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/pi_hub_srvs) by extensions ['colcon_meta']
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/pi_hub_srvs) by extension 'colcon_meta'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/pi_hub_srvs) by extensions ['ros']
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/pi_hub_srvs) by extension 'ros'
+[0.557s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pi_hub_srvs' with type 'ros.ament_cmake' and name 'pi_hub_srvs'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/pump_control) by extensions ['ignore', 'ignore_ament_install']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/pump_control) by extension 'ignore'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/pump_control) by extension 'ignore_ament_install'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/pump_control) by extensions ['colcon_pkg']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/pump_control) by extension 'colcon_pkg'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/pump_control) by extensions ['colcon_meta']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/pump_control) by extension 'colcon_meta'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/pump_control) by extensions ['ros']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/pump_control) by extension 'ros'
+[0.560s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pump_control' with type 'ros.ament_python' and name 'pump_control'
+[0.560s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.560s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.560s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.560s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.560s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'led_control' build argument 'cmake_args' from command line to 'None'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'led_control' build argument 'cmake_target' from command line to 'None'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'led_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'led_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'led_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.618s] Level 5:colcon.colcon_core.verb:set package 'led_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.619s] Level 5:colcon.colcon_core.verb:set package 'led_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.619s] Level 5:colcon.colcon_core.verb:set package 'led_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.619s] Level 5:colcon.colcon_core.verb:set package 'led_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.619s] DEBUG:colcon.colcon_core.verb:Building package 'led_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros_ws/build/led_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros_ws/install/led_control', 'merge_install': False, 'path': '/root/ros_ws/src/led_control', 'symlink_install': False, 'test_result_base': None}
+[0.621s] Level 5:colcon.colcon_core.verb:set package 'pi_hub_srvs' build argument 'cmake_args' from command line to 'None'
+[0.621s] Level 5:colcon.colcon_core.verb:set package 'pi_hub_srvs' build argument 'cmake_target' from command line to 'None'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'pi_hub_srvs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'pi_hub_srvs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'pi_hub_srvs' build argument 'cmake_clean_first' from command line to 'False'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'pi_hub_srvs' build argument 'cmake_force_configure' from command line to 'False'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'pi_hub_srvs' build argument 'ament_cmake_args' from command line to 'None'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'pi_hub_srvs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'pi_hub_srvs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.622s] DEBUG:colcon.colcon_core.verb:Building package 'pi_hub_srvs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros_ws/build/pi_hub_srvs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros_ws/install/pi_hub_srvs', 'merge_install': False, 'path': '/root/ros_ws/src/pi_hub_srvs', 'symlink_install': False, 'test_result_base': None}
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'pump_control' build argument 'cmake_args' from command line to 'None'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'pump_control' build argument 'cmake_target' from command line to 'None'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'pump_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'pump_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'pump_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'pump_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'pump_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'pump_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'pump_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.625s] DEBUG:colcon.colcon_core.verb:Building package 'pump_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros_ws/build/pump_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros_ws/install/pump_control', 'merge_install': False, 'path': '/root/ros_ws/src/pump_control', 'symlink_install': False, 'test_result_base': None}
+[0.627s] Level 5:colcon.colcon_core.verb:set package 'pi_hub' build argument 'cmake_args' from command line to 'None'
+[0.627s] Level 5:colcon.colcon_core.verb:set package 'pi_hub' build argument 'cmake_target' from command line to 'None'
+[0.627s] Level 5:colcon.colcon_core.verb:set package 'pi_hub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.627s] Level 5:colcon.colcon_core.verb:set package 'pi_hub' build argument 'cmake_clean_cache' from command line to 'False'
+[0.627s] Level 5:colcon.colcon_core.verb:set package 'pi_hub' build argument 'cmake_clean_first' from command line to 'False'
+[0.627s] Level 5:colcon.colcon_core.verb:set package 'pi_hub' build argument 'cmake_force_configure' from command line to 'False'
+[0.627s] Level 5:colcon.colcon_core.verb:set package 'pi_hub' build argument 'ament_cmake_args' from command line to 'None'
+[0.627s] Level 5:colcon.colcon_core.verb:set package 'pi_hub' build argument 'catkin_cmake_args' from command line to 'None'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'pi_hub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.628s] DEBUG:colcon.colcon_core.verb:Building package 'pi_hub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros_ws/build/pi_hub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros_ws/install/pi_hub', 'merge_install': False, 'path': '/root/ros_ws/src/pi_hub', 'symlink_install': False, 'test_result_base': None}
+[0.629s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.634s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.635s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/root/ros_ws/src/led_control' with build type 'ament_python'
+[0.635s] Level 1:colcon.colcon_core.shell:create_environment_hook('led_control', 'ament_prefix_path')
+[0.646s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.647s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros_ws/install/led_control/share/led_control/hook/ament_prefix_path.ps1'
+[0.649s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros_ws/install/led_control/share/led_control/hook/ament_prefix_path.dsv'
+[0.650s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros_ws/install/led_control/share/led_control/hook/ament_prefix_path.sh'
+[0.654s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.654s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.669s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/root/ros_ws/src/pump_control' with build type 'ament_python'
+[0.671s] Level 1:colcon.colcon_core.shell:create_environment_hook('pump_control', 'ament_prefix_path')
+[0.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros_ws/install/pump_control/share/pump_control/hook/ament_prefix_path.ps1'
+[0.678s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros_ws/install/pump_control/share/pump_control/hook/ament_prefix_path.dsv'
+[0.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros_ws/install/pump_control/share/pump_control/hook/ament_prefix_path.sh'
+[0.685s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.685s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.697s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/ros_ws/src/pi_hub_srvs' with build type 'ament_cmake'
+[0.697s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/ros_ws/src/pi_hub_srvs'
+[0.701s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.701s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.236s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/root/ros_ws/src/led_control'
+[1.240s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.241s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.744s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/root/ros_ws/src/pump_control'
+[1.747s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.748s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.765s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros_ws/build/pi_hub_srvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros_ws/install/time_schedule:/root/ros_ws/install/pi_hub:/root/ros_ws/install/pump_control:/root/ros_ws/install/led_control:/root/ros_ws/install/gpio_conf:/opt/ros/humble /usr/bin/cmake --build /root/ros_ws/build/pi_hub_srvs -- -j4 -l4
+[3.485s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros_ws/build/pi_hub_srvs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros_ws/install/time_schedule:/root/ros_ws/install/pi_hub:/root/ros_ws/install/pump_control:/root/ros_ws/install/led_control:/root/ros_ws/install/gpio_conf:/opt/ros/humble /usr/bin/cmake --build /root/ros_ws/build/pi_hub_srvs -- -j4 -l4
+[3.683s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros_ws/src/led_control': PYTHONPATH=/root/ros_ws/build/led_control/prefix_override:/root/ros_ws/install/led_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/led_control build --build-base /root/ros_ws/build/led_control/build install --record /root/ros_ws/build/led_control/install.log --install-scripts $base/lib/led_control --single-version-externally-managed
+[3.703s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros_ws/src/pump_control': PYTHONPATH=/root/ros_ws/build/pump_control/prefix_override:/root/ros_ws/install/pump_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pump_control build --build-base /root/ros_ws/build/pump_control/build install --record /root/ros_ws/build/pump_control/install.log --install-scripts $base/lib/pump_control --single-version-externally-managed
+[5.348s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros_ws/build/pi_hub_srvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros_ws/install/time_schedule:/root/ros_ws/install/pi_hub:/root/ros_ws/install/pump_control:/root/ros_ws/install/led_control:/root/ros_ws/install/gpio_conf:/opt/ros/humble /usr/bin/cmake --install /root/ros_ws/build/pi_hub_srvs
+[5.375s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros_ws/src/led_control' returned '0': PYTHONPATH=/root/ros_ws/build/led_control/prefix_override:/root/ros_ws/install/led_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/led_control build --build-base /root/ros_ws/build/led_control/build install --record /root/ros_ws/build/led_control/install.log --install-scripts $base/lib/led_control --single-version-externally-managed
+[5.391s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/led_control' for CMake module files
+[5.392s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/led_control' for CMake config files
+[5.400s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/led_control/lib'
+[5.401s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/led_control/bin'
+[5.401s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/led_control/lib/pkgconfig/led_control.pc'
+[5.402s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/led_control/lib/python3.10/site-packages'
+[5.402s] Level 1:colcon.colcon_core.shell:create_environment_hook('led_control', 'pythonpath')
+[5.410s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros_ws/install/led_control/share/led_control/hook/pythonpath.ps1'
+[5.428s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros_ws/install/led_control/share/led_control/hook/pythonpath.dsv'
+[5.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros_ws/install/led_control/share/led_control/hook/pythonpath.sh'
+[5.445s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/led_control/bin'
+[5.451s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(led_control)
+[5.453s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros_ws/install/led_control/share/led_control/package.ps1'
+[5.461s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros_ws/install/led_control/share/led_control/package.dsv'
+[5.462s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros_ws/install/led_control/share/led_control/package.sh'
+[5.479s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros_ws/install/led_control/share/led_control/package.bash'
+[5.486s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros_ws/install/led_control/share/led_control/package.zsh'
+[5.491s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros_ws/install/led_control/share/colcon-core/packages/led_control)
+[5.510s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pump_control' for CMake module files
+[5.513s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros_ws/src/pump_control' returned '0': PYTHONPATH=/root/ros_ws/build/pump_control/prefix_override:/root/ros_ws/install/pump_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pump_control build --build-base /root/ros_ws/build/pump_control/build install --record /root/ros_ws/build/pump_control/install.log --install-scripts $base/lib/pump_control --single-version-externally-managed
+[5.514s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pump_control' for CMake config files
+[5.515s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pump_control/lib'
+[5.516s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pump_control/bin'
+[5.516s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pump_control/lib/pkgconfig/pump_control.pc'
+[5.520s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pump_control/lib/python3.10/site-packages'
+[5.520s] Level 1:colcon.colcon_core.shell:create_environment_hook('pump_control', 'pythonpath')
+[5.529s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros_ws/install/pump_control/share/pump_control/hook/pythonpath.ps1'
+[5.531s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros_ws/install/pump_control/share/pump_control/hook/pythonpath.dsv'
+[5.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros_ws/install/pump_control/share/pump_control/hook/pythonpath.sh'
+[5.538s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pump_control/bin'
+[5.538s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pump_control)
+[5.546s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros_ws/install/pump_control/share/pump_control/package.ps1'
+[5.554s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros_ws/install/pump_control/share/pump_control/package.dsv'
+[5.566s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros_ws/install/pump_control/share/pump_control/package.sh'
+[5.568s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros_ws/install/pump_control/share/pump_control/package.bash'
+[5.569s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros_ws/install/pump_control/share/pump_control/package.zsh'
+[5.570s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros_ws/install/pump_control/share/colcon-core/packages/pump_control)
+[5.571s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/root/ros_ws/src/pi_hub' with build type 'ament_python'
+[5.572s] Level 1:colcon.colcon_core.shell:create_environment_hook('pi_hub', 'ament_prefix_path')
+[5.585s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros_ws/install/pi_hub/share/pi_hub/hook/ament_prefix_path.ps1'
+[5.589s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros_ws/install/pi_hub/share/pi_hub/hook/ament_prefix_path.dsv'
+[5.590s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros_ws/install/pi_hub/share/pi_hub/hook/ament_prefix_path.sh'
+[5.596s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.597s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.748s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/root/ros_ws/src/pi_hub'
+[6.753s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.753s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.771s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pi_hub_srvs)
+[6.778s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub_srvs' for CMake module files
+[6.779s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros_ws/build/pi_hub_srvs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/ros_ws/install/time_schedule:/root/ros_ws/install/pi_hub:/root/ros_ws/install/pump_control:/root/ros_ws/install/led_control:/root/ros_ws/install/gpio_conf:/opt/ros/humble /usr/bin/cmake --install /root/ros_ws/build/pi_hub_srvs
+[6.783s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub_srvs' for CMake config files
+[6.786s] Level 1:colcon.colcon_core.shell:create_environment_hook('pi_hub_srvs', 'cmake_prefix_path')
+[6.794s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/hook/cmake_prefix_path.ps1'
+[6.795s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/hook/cmake_prefix_path.dsv'
+[6.799s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/hook/cmake_prefix_path.sh'
+[6.801s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub_srvs/lib'
+[6.802s] Level 1:colcon.colcon_core.shell:create_environment_hook('pi_hub_srvs', 'ld_library_path_lib')
+[6.809s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/hook/ld_library_path_lib.ps1'
+[6.810s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/hook/ld_library_path_lib.dsv'
+[6.811s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/hook/ld_library_path_lib.sh'
+[6.812s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub_srvs/bin'
+[6.812s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub_srvs/lib/pkgconfig/pi_hub_srvs.pc'
+[6.814s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub_srvs/lib/python3.10/site-packages'
+[6.817s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub_srvs/bin'
+[6.820s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/package.ps1'
+[6.822s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/package.dsv'
+[6.823s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/package.sh'
+[6.824s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/package.bash'
+[6.825s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/package.zsh'
+[6.826s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros_ws/install/pi_hub_srvs/share/colcon-core/packages/pi_hub_srvs)
+[7.159s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pi_hub_srvs)
+[7.164s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub_srvs' for CMake module files
+[7.168s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub_srvs' for CMake config files
+[7.170s] Level 1:colcon.colcon_core.shell:create_environment_hook('pi_hub_srvs', 'cmake_prefix_path')
+[7.174s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/hook/cmake_prefix_path.ps1'
+[7.175s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/hook/cmake_prefix_path.dsv'
+[7.178s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/hook/cmake_prefix_path.sh'
+[7.181s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub_srvs/lib'
+[7.181s] Level 1:colcon.colcon_core.shell:create_environment_hook('pi_hub_srvs', 'ld_library_path_lib')
+[7.189s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/hook/ld_library_path_lib.ps1'
+[7.192s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/hook/ld_library_path_lib.dsv'
+[7.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/hook/ld_library_path_lib.sh'
+[7.195s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub_srvs/bin'
+[7.201s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub_srvs/lib/pkgconfig/pi_hub_srvs.pc'
+[7.202s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub_srvs/lib/python3.10/site-packages'
+[7.202s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub_srvs/bin'
+[7.208s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/package.ps1'
+[7.210s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/package.dsv'
+[7.211s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/package.sh'
+[7.213s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/package.bash'
+[7.217s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros_ws/install/pi_hub_srvs/share/pi_hub_srvs/package.zsh'
+[7.218s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros_ws/install/pi_hub_srvs/share/colcon-core/packages/pi_hub_srvs)
+[7.629s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros_ws/src/pi_hub': AMENT_PREFIX_PATH=/root/ros_ws/install/pump_control:/root/ros_ws/install/led_control:/root/ros_ws/install/time_schedule:/root/ros_ws/install/pi_hub:/root/ros_ws/install/pi_hub_srvs:/root/ros_ws/install/gpio_conf:/opt/ros/humble PYTHONPATH=/root/ros_ws/build/pi_hub/prefix_override:/root/ros_ws/install/pi_hub/lib/python3.10/site-packages:/root/ros_ws/install/pump_control/lib/python3.10/site-packages:/root/ros_ws/install/led_control/lib/python3.10/site-packages:/root/ros_ws/install/time_schedule/lib/python3.10/site-packages:/root/ros_ws/install/pi_hub/lib/python3.10/site-packages:/root/ros_ws/install/pi_hub_srvs/local/lib/python3.10/dist-packages:/root/ros_ws/install/gpio_conf/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/pi_hub build --build-base /root/ros_ws/build/pi_hub/build install --record /root/ros_ws/build/pi_hub/install.log --install-scripts $base/lib/pi_hub --single-version-externally-managed
+[8.532s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub' for CMake module files
+[8.533s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros_ws/src/pi_hub' returned '0': AMENT_PREFIX_PATH=/root/ros_ws/install/pump_control:/root/ros_ws/install/led_control:/root/ros_ws/install/time_schedule:/root/ros_ws/install/pi_hub:/root/ros_ws/install/pi_hub_srvs:/root/ros_ws/install/gpio_conf:/opt/ros/humble PYTHONPATH=/root/ros_ws/build/pi_hub/prefix_override:/root/ros_ws/install/pi_hub/lib/python3.10/site-packages:/root/ros_ws/install/pump_control/lib/python3.10/site-packages:/root/ros_ws/install/led_control/lib/python3.10/site-packages:/root/ros_ws/install/time_schedule/lib/python3.10/site-packages:/root/ros_ws/install/pi_hub/lib/python3.10/site-packages:/root/ros_ws/install/pi_hub_srvs/local/lib/python3.10/dist-packages:/root/ros_ws/install/gpio_conf/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/pi_hub build --build-base /root/ros_ws/build/pi_hub/build install --record /root/ros_ws/build/pi_hub/install.log --install-scripts $base/lib/pi_hub --single-version-externally-managed
+[8.534s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub' for CMake config files
+[8.536s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub/lib'
+[8.536s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub/bin'
+[8.537s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub/lib/pkgconfig/pi_hub.pc'
+[8.537s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub/lib/python3.10/site-packages'
+[8.538s] Level 1:colcon.colcon_core.shell:create_environment_hook('pi_hub', 'pythonpath')
+[8.542s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros_ws/install/pi_hub/share/pi_hub/hook/pythonpath.ps1'
+[8.543s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros_ws/install/pi_hub/share/pi_hub/hook/pythonpath.dsv'
+[8.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros_ws/install/pi_hub/share/pi_hub/hook/pythonpath.sh'
+[8.551s] Level 1:colcon.colcon_core.environment:checking '/root/ros_ws/install/pi_hub/bin'
+[8.552s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pi_hub)
+[8.558s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros_ws/install/pi_hub/share/pi_hub/package.ps1'
+[8.559s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros_ws/install/pi_hub/share/pi_hub/package.dsv'
+[8.561s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros_ws/install/pi_hub/share/pi_hub/package.sh'
+[8.563s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros_ws/install/pi_hub/share/pi_hub/package.bash'
+[8.566s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros_ws/install/pi_hub/share/pi_hub/package.zsh'
+[8.568s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros_ws/install/pi_hub/share/colcon-core/packages/pi_hub)
+[8.569s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.575s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.575s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.575s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.624s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[8.625s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.625s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.626s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.626s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[8.627s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.636s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros_ws/install/local_setup.ps1'
+[8.639s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/ros_ws/install/_local_setup_util_ps1.py'
+[8.644s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros_ws/install/setup.ps1'
+[8.648s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros_ws/install/local_setup.sh'
+[8.650s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/ros_ws/install/_local_setup_util_sh.py'
+[8.651s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros_ws/install/setup.sh'
+[8.658s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros_ws/install/local_setup.bash'
+[8.659s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros_ws/install/setup.bash'
+[8.667s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros_ws/install/local_setup.zsh'
+[8.668s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros_ws/install/setup.zsh'

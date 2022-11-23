@@ -1,3 +1,0 @@
-[console_scripts]
-time_schedule_node = time_schedule.time_schedule_node:main
-

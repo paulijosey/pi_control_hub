@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from pi_hub_srvs/srv/Control.srv
+// generated code does not contain a copyright notice
+
+
+module pi_hub_srvs {
+  module srv {
+    struct Control_Request {
+      int8 state;
+    };
+    struct Control_Response {
+      boolean success;
+    };
+  };
+};

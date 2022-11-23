@@ -1,4 +1,4 @@
-ARG ros_version='foxy'
+ARG ros_version='humble'
 FROM ros:${ros_version}
 
 ENV ROS_WS=/root/ros_ws
@@ -10,6 +10,7 @@ RUN   apt-get update && apt-get upgrade -y && apt-get install -y \
       git \
       bc \
       i2c-tools \
+      python3-lgpio \
       libatlas-base-dev \
       libgflags-dev \
       libeigen3-dev \

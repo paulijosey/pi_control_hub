@@ -8,7 +8,9 @@ This is a personal project and thus a lot of parameters and usernames will be ha
 
 # Node Structure
 
-TODO
+The idea is that this will be a modular project. Everyone can implement/use the nodes needed. Afterwards modify the pi_hub package to launch all the nodes you want (also make sure to point it at the right param config file). 
+
+TODO: add flowchart? maybe? 
 
 # Setup on Pi:
 

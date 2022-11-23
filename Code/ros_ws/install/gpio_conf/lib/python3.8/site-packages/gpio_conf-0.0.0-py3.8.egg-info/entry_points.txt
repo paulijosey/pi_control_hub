@@ -1,3 +1,0 @@
-[console_scripts]
-gpio_conf_node = gpio_conf.gpio_conf_node:main
-
