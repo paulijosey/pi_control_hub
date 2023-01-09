@@ -4,7 +4,7 @@ set -e
 function main {
 	# Get command line options
 	OPTERR=1
-	local ros_version='galactic'
+	local ros_version='humble'
 	local cross_compile=0
 
 	while getopts ":hr:C" opt; do
@@ -34,9 +34,9 @@ function main {
 function build_docker_image {
 	tagname=${ros_version}
 	if [ $cross_compile == 1 ]; then
-		docker buildx build --push --platform linux/amd64,linux/arm/v7,linux/arm64 --tag josephp97/pi_control_hub_dev:$tagname --build-arg ros_version=$ros_version .devcontainer/
+		docker buildx build -f .devcontainer/Dockerfile.ros --push --platform linux/amd64,linux/arm/v7,linux/arm64 --tag josephp97/ros:$tagname --build-arg ros_version=$ros_version .devcontainer/
 	else
-		docker buildx build --push --platform linux/amd64 --tag josephp97/pi_control_hub_dev:$tagname --build-arg ros_version=$ros_version .devcontainer/
+		docker buildx build -f .devcontainer/Dockerfile.ros --push --platform linux/amd64 --tag josephp97/ros:$tagname --build-arg ros_version=$ros_version .devcontainer/
 	fi
 }
 function print_help {

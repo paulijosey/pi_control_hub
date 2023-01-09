@@ -1,5 +1,6 @@
 ARG ros_version='humble'
-FROM ros:${ros_version}
+# FROM miguelbarroeprosima/ros:${ros_version}
+FROM josephp97/ros:${ros_version}
 
 ENV ROS_WS=/root/ros_ws
 ENV CONF_DIR=/root/config
@@ -18,8 +19,13 @@ RUN   apt-get update && apt-get upgrade -y && apt-get install -y \
       libsuitesparse-dev && \
       rm -rf /var/lib/apt/lists/*
 
+RUN add-apt-repository universe && \
+    apt update && \
+    curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg && \
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | tee /etc/apt/sources.list.d/ros2.list > /dev/null
+
       # additional ROS stuff
-RUN   apt-get update && apt-get install -y \
+RUN   apt update && apt install -y \
       ros-${ROS_DISTRO}-cv-bridge \
       ros-${ROS_DISTRO}-image-transport \
       ros-${ROS_DISTRO}-message-filters  && \
@@ -35,8 +41,8 @@ RUN /bin/bash -c "source /opt/ros/${ROS_DISTRO}/setup.bash; colcon build --symli
 
 
       # TODO: not sure this is needed (doesn't hurt though)
-RUN   sed -i '/exec "$@"/i \
-            source "${ROS_WS}/install/setup.bash"' /ros_entrypoint.sh
+# RUN   sed -i '/exec "$@"/i \
+#             source "${ROS_WS}/install/setup.bash"' /ros_entrypoint.sh
 
       # make development easier by auto-sourcing ROS stuff
 RUN   cp /etc/skel/.bash* /root/ && \
