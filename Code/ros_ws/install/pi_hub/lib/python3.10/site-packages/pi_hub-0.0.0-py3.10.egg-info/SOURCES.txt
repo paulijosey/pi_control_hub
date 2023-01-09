@@ -8,6 +8,8 @@ setup.py
 ../../build/pi_hub/pi_hub.egg-info/requires.txt
 ../../build/pi_hub/pi_hub.egg-info/top_level.txt
 ../../build/pi_hub/pi_hub.egg-info/zip-safe
+config/params.yaml
+launch/pi_hub.launch.py
 pi_hub/__init__.py
 pi_hub/pi_hub_node.py
 resource/pi_hub

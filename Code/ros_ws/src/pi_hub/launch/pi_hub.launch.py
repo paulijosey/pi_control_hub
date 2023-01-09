@@ -11,11 +11,36 @@ def generate_launch_description():
         'params.yaml'
         )
         
+<<<<<<< HEAD
     node=Node(
+=======
+    pi_hub_node=Node(
+>>>>>>> 8c722b1eba5f3b660b868a090445a31f4f260c85
         package = 'pi_hub',
         name = 'pi_hub_node',
         executable = 'pi_hub_node',
         parameters = [config]
     )
+<<<<<<< HEAD
     ld.add_action(node)
+=======
+
+    pump_control_node=Node(
+        package = 'pump_control',
+        name = 'pump_control_node',
+        executable = 'pump_control_node',
+        parameters = [config]
+    )
+
+    # led_control_node=Node(
+    #     package = 'led_control',
+    #     name = 'led_control_node',
+    #     executable = 'led_control_node',
+    #     parameters = [config]
+    # )
+
+    ld.add_action(pi_hub_node)
+    ld.add_action(pump_control_node)
+    # ld.add_action(led_control_node)
+>>>>>>> 8c722b1eba5f3b660b868a090445a31f4f260c85
     return ld

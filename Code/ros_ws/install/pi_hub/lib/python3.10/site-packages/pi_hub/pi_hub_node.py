@@ -14,6 +14,7 @@ class PiHub(Node):
     def __init__(self):
         super().__init__('pi_hub')
 
+<<<<<<< HEAD
         # declare all params here
         # param name, default value
         self.declare_parameters(
@@ -23,6 +24,8 @@ class PiHub(Node):
                 ('gpio_led', 18)
             ]
         )
+=======
+>>>>>>> 8c722b1eba5f3b660b868a090445a31f4f260c85
 
 def main(args=None):
     rclpy.init(args=args)

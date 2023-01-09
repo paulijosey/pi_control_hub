@@ -1,0 +1,7 @@
+pump_controller:
+  ros__parameters:
+    gpio: 15
+
+led_controller:
+  ros__parameters:
+    gpio: 18

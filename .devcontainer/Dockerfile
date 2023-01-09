@@ -1,5 +1,4 @@
 ARG ros_version='humble'
-# FROM miguelbarroeprosima/ros:${ros_version}
 FROM josephp97/ros:${ros_version}
 
 ENV ROS_WS=/root/ros_ws

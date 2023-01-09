@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 /root/ros_ws/install/time_schedule:/root/ros_ws/install/pump_control:/root/ros_ws/install/pi_hub_srvs:/root/ros_ws/install/pi_hub:/root/ros_ws/install/led_control:/root/ros_ws/install/gpio_conf:/opt/ros/humble
+=======
+/root/ros_ws/install/time_schedule:/root/ros_ws/install/pi_hub:/root/ros_ws/install/pump_control:/root/ros_ws/install/pi_hub_srvs:/root/ros_ws/install/led_control:/root/ros_ws/install/gpio_conf:/opt/ros/humble
+>>>>>>> 8c722b1eba5f3b660b868a090445a31f4f260c85

@@ -1,4 +1,28 @@
+<<<<<<< HEAD
 /pi_hub:
   ros__parameters:
     gpio_led: 18
     gpio_pump: 15
+=======
+pump_control_node:
+  ros__parameters:
+    gpio: 15                        # GPIO pin the pump is controlled with 
+    status_update_rate: 10          # rate at which to check time intervals [s]
+    pump_intervals: 
+      on:  ['1:00:00',              # since ROS doesn't support 2D arrays yet we create 
+            '5:00:00',              # two arrays for on and off times. An on-intervall will
+            '9:00:00',              # then corespond to on[i] - off[i]
+            '13:00:00',
+            '17:00:00',
+            '21:00:00']
+      off: ['1:10:00',              
+            '5:10:00',   
+            '9:10:00',   
+            '13:10:00',   
+            '17:10:00',   
+            '21:10:00']
+
+led_control_node:
+  ros__parameters:
+    gpio: 18
+>>>>>>> 8c722b1eba5f3b660b868a090445a31f4f260c85
