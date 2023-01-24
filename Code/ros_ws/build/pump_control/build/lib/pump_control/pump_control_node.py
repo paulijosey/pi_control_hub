@@ -16,7 +16,6 @@ from pi_hub_srvs.srv    import Control     # check service definition in pi_hub_
 from std_msgs.msg       import Bool
 
 # common libs
-import time
 import lgpio
 from datetime           import datetime
 
@@ -102,6 +101,7 @@ class PumpController(Node):
         self.srv = self.create_service(Control, 
                                         self.get_name()+'/control', 
                                         self.control_callback)
+
 
     def init_publishers(self):
         '''
@@ -213,7 +213,11 @@ class PumpController(Node):
 
         return now > on_time and now < off_time
 
-
+#    __  __       _       
+#   |  \/  | __ _(_)_ __  
+#   | |\/| |/ _` | | '_ \ 
+#   | |  | | (_| | | | | |
+#   |_|  |_|\__,_|_|_| |_|
 def main(args=None):
     rclpy.init(args=args)
     # Start the service

@@ -102,6 +102,7 @@ class PumpController(Node):
                                         self.get_name()+'/control', 
                                         self.control_callback)
 
+
     def init_publishers(self):
         '''
         initialize all publishers and make them spin at given update rates

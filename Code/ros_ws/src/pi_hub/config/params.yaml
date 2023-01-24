@@ -1,3 +1,7 @@
+/pi_hub:
+  ros__parameters:
+    gpio_led: 18
+    gpio_pump: 15
 pump_control_node:
   ros__parameters:
     gpio: 15                        # GPIO pin the pump is controlled with 
