@@ -1,6 +1,10 @@
 ARG ros_version='humble'
 FROM josephp97/ros:${ros_version}
 
+ARG ros_version
+ENV ROS_DISTRO=${ros_version}
+
+
 ENV ROS_WS=/root/ros_ws
 ENV CONF_DIR=/root/config
 
