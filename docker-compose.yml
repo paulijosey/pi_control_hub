@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   pi-control-hub: 
-    image: josephp97/pi_control_hub_dev:humble
+    image: josephp97/pi_control_hub_dev:eloquent
     working_dir: /root/ros_ws
     privileged: true
     volumes:

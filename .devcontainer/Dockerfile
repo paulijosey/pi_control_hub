@@ -1,5 +1,6 @@
-ARG ros_version='humble'
-FROM josephp97/ros:${ros_version}
+ARG ros_version='eloquent'
+# FROM josephp97/ros:${ros_version}
+FROM ros:${ros_version}
 
 ARG ros_version
 ENV ROS_DISTRO=${ros_version}
@@ -14,7 +15,8 @@ RUN   apt-get update && apt-get upgrade -y && apt-get install -y \
       git \
       bc \
       i2c-tools \
-      python3-lgpio \
+      # python3-lgpio \
+      # python-rpi.gpio \
       libatlas-base-dev \
       libgflags-dev \
       libeigen3-dev \
@@ -22,17 +24,17 @@ RUN   apt-get update && apt-get upgrade -y && apt-get install -y \
       libsuitesparse-dev && \
       rm -rf /var/lib/apt/lists/*
 
-RUN add-apt-repository universe && \
-    apt update && \
-    curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg && \
-    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | tee /etc/apt/sources.list.d/ros2.list > /dev/null
+# RUN add-apt-repository universe && \
+#     apt update && \
+#     curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg && \
+#     echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | tee /etc/apt/sources.list.d/ros2.list > /dev/null
 
-      # additional ROS stuff
-RUN   apt update && apt install -y \
-      ros-${ROS_DISTRO}-cv-bridge \
-      ros-${ROS_DISTRO}-image-transport \
-      ros-${ROS_DISTRO}-message-filters  && \
-      rm -rf /var/lib/apt/lists/*
+#       # additional ROS stuff
+# RUN   apt update && apt install -y \
+#       ros-${ROS_DISTRO}-cv-bridge \
+#       ros-${ROS_DISTRO}-image-transport \
+#       ros-${ROS_DISTRO}-message-filters  && \
+#       rm -rf /var/lib/apt/lists/*
 
       # create directories for code and configs
 RUN   mkdir -p ${CONF_DIR} && \
