@@ -13,15 +13,15 @@ def generate_launch_description():
         
     pi_hub_node=Node(
         package = 'pi_hub',
-        name = 'pi_hub_node',
-        executable = 'pi_hub_node',
+        node_name = 'pi_hub_node',
+        node_executable = 'pi_hub_node',
         parameters = [config]
     )
 
     pump_control_node=Node(
         package = 'pump_control',
-        name = 'pump_control_node',
-        executable = 'pump_control_node',
+        node_name = 'pump_control_node',
+        node_executable = 'pump_control_node',
         parameters = [config]
     )
 

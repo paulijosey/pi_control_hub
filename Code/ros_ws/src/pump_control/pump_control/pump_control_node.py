@@ -16,7 +16,8 @@ from pi_hub_srvs.srv    import Control     # check service definition in pi_hub_
 from std_msgs.msg       import Bool
 
 # common libs
-import lgpio
+# import lgpio
+# import RPi.GPIO
 from datetime           import datetime
 
 class Parameters:
@@ -168,8 +169,12 @@ class PumpController(Node):
         Make sure you already have the ROS params loaded.
         '''
         # open the gpio chip and set the pump pin as output
-        self.header_open = lgpio.gpiochip_open(0)
-        lgpio.gpio_claim_output(self.header_open, self.params.gpio)
+        # self.header_open = lgpio.gpiochip_open(0)
+        # lgpio.gpio_claim_output(self.header_open, self.params.gpio)
+
+        # use GPIO header numbers
+        # GPIO.setmode(GPIO.BCM)
+        # GPIO.setup(self.params.gpio, GPIO.OUT)
 
     def pumpOn(self) -> bool:
         '''
@@ -177,7 +182,8 @@ class PumpController(Node):
         config file)
         '''
         # Turn the GPIO pin on
-        lgpio.gpio_write(self.header_open, self.params.gpio, 1)
+        # lgpio.gpio_write(self.header_open, self.params.gpio, 1)
+        # GPIO.output(self.params.gpio, GPIO.HIGH)
         self.get_logger().info('Turn pump on')
         self.status = True
         return True
@@ -188,7 +194,8 @@ class PumpController(Node):
         config file)
         '''
         # Turn the GPIO pin off
-        lgpio.gpio_write(self.header_open, self.params.gpio, 0)
+        # lgpio.gpio_write(self.header_open, self.params.gpio, 0)
+        # GPIO.output(self.params.gpio, GPIO.LOW)
         self.get_logger().info('Turn pump off')
         self.status = False
         return True
