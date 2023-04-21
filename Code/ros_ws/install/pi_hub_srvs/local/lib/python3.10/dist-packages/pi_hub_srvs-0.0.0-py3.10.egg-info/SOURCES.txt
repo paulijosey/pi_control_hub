@@ -1,6 +1,0 @@
-setup.py
-pi_hub_srvs/__init__.py
-pi_hub_srvs.egg-info/PKG-INFO
-pi_hub_srvs.egg-info/SOURCES.txt
-pi_hub_srvs.egg-info/dependency_links.txt
-pi_hub_srvs.egg-info/top_level.txt
