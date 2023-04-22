@@ -1,5 +1,7 @@
 ################################# PUMP ##########################################
 pump:
+  client_id: 'pump'
+  topic: '/pflanzenkisterl/controllers/pump'
   gpios: 3
   on_interval: [
         '8:00:00', 
@@ -13,6 +15,8 @@ pump:
       ]
 ################################# LEDS ###########################################
 leds:
+  client_id: 'leds'
+  topic: '/pflanzenkisterl/controllers/leds'
   gpios: [
           12, 
           13,

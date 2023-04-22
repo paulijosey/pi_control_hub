@@ -2,9 +2,16 @@ import RPi.GPIO as GPIO
 import time 
 from datetime import datetime
 
-class Parameters:
+class GPIOParameters:
     def __init__(self) -> None:
         pass
+
+class GPIOControllerState():
+    def __init__(self) -> None:
+        # no power(0), full power(1), dimmed(in between)
+        self.power = 0
+        # in case a sensor blocks control 
+        self.blocked = False
 
 class GPIOController():
     """
@@ -17,13 +24,16 @@ class GPIOController():
 
 
     """
-    def __init__(self, gpio_pins):
-        self.params = Parameters()
+    def __init__(self, gpio_pins) -> None:
+        self.params = GPIOParameters()
         self.params.gpios = gpio_pins
-        self.status = False
+        self.state = GPIOControllerState()
 
         # open gpio headers
         self.init_gpio_headers()
+
+        # turn power off when starting
+        self.gpioOff()
 
     """
 
@@ -51,10 +61,15 @@ class GPIOController():
         Turn on the pump (define the GPIO header of the pump in the 
         config file)
         '''
+        # if this controller is blocked do not allow it to be 
+        # turned on
+        if (self.state.blocked):
+            return False
+
         # Turn the GPIO pin on
         for gpio_pin in self.params.gpios:
             GPIO.output(gpio_pin, GPIO.HIGH)
-        self.status = True
+        self.state.power = 1
         return True
 
     def gpioOff(self) -> bool:
@@ -65,9 +80,22 @@ class GPIOController():
         # Turn the GPIO pin off
         for gpio_pin in self.params.gpios:
             GPIO.output(gpio_pin, GPIO.LOW)
-        self.status = False
+        self.state.power = 0
         print('Turning off')
         return True
+
+    def gpioBlock(self) -> bool:
+        """
+        Block this controller and turn it off
+        """
+        self.gpioOff()
+        self.state.blocked = True
+
+    def gpioUnblock(self) -> bool:
+        """
+        Unblock this controller
+        """
+        self.state.blocked = False
 
     def close(self):
         '''
@@ -77,34 +105,6 @@ class GPIOController():
         '''
         GPIO.cleanup()
  
-    """
-    
-       _     _     _                            
-      | |   (_)___| |_ ___ _ __   ___ _ __ ___  
-      | |   | / __| __/ _ \ '_ \ / _ \ '__/ __| 
-      | |___| \__ \ ||  __/ | | |  __/ |  \__ \ 
-      |_____|_|___/\__\___|_| |_|\___|_|  |___/ 
-
-    
-    """
-
-    """
-    
-       ____        _     _ _     _                   
-      |  _ \ _   _| |__ | (_)___| |__   ___ _ __ ___ 
-      | |_) | | | | '_ \| | / __| '_ \ / _ \ '__/ __|
-      |  __/| |_| | |_) | | \__ \ | | |  __/ |  \__ \
-      |_|    \__,_|_.__/|_|_|___/_| |_|\___|_|  |___/
-
-    
-    """
-
-    #    _   _ _   _ _ _ _           _____                 _   _                  
-    #   | | | | |_(_) (_) |_ _   _  |  ___|   _ _ __   ___| |_(_) ___  _ __  ___  
-    #   | | | | __| | | | __| | | | | |_ | | | | '_ \ / __| __| |/ _ \| '_ \/ __| 
-    #   | |_| | |_| | | | |_| |_| | |  _|| |_| | | | | (__| |_| | (_) | | | \__ \ 
-    #    \___/ \__|_|_|_|\__|\__, | |_|   \__,_|_| |_|\___|\__|_|\___/|_| |_|___/ 
-    #                        |___/                                                
     # def check_status(self):
     #     status = False
     #     # iterate over pump intervals 
