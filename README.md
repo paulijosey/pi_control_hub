@@ -35,11 +35,11 @@ from the projects root directory.
 
 ## Interact with Container
 
-The prefered way to develop on this projecte would be by using VS-Code (with the docker externsion).
+The preferred way to develop on this project would be by using VS-Code (with the docker extension).
 Go to the docker-extension menu and right-click on the running container. Choose "Attach VS-code" and in the new vs-code window open the folder "/root/ros_ws". 
-VS-Code will now install all extensions I want to include and also apply a theme (to easily distinguish between docker-contatiner vs-code and normal vs-code).
+VS-Code will now install all extensions I want to include and also apply a theme (to easily distinguish between docker-container vs-code and normal vs-code).
 
-From here on you will have a working ROS2 install with all custome packages located in /root/ros_ws/src. 
+From here on you will have a working ROS2 install with all custom packages located in /root/ros_ws/src. 
 To build all those packages run 
 
 ```sh
@@ -49,7 +49,7 @@ from /root/ros_ws/.
 
 ## Creating a new package
 
-To create a new ROS2 package follow the instructions on their WIKI: https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html. (Your choice if you prefere python or C++ ... we are not that performance oriantated)
+To create a new ROS2 package follow the instructions on their WIKI: https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html. (Your choice if you prefer python or C++ ... we are not that performance orientated)
 
 ## Modifing the Docker container
 

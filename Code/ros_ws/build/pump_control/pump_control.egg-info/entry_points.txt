@@ -1,3 +1,0 @@
-[console_scripts]
-pump_control_node = pump_control.pump_control_node:main
-
