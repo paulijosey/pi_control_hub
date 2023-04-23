@@ -1,4 +1,8 @@
-import RPi.GPIO as GPIO
+try:
+    import RPi.GPIO as GPIO
+except ImportError:
+    import SimulRPi.GPIO as GPIO
+
 import time 
 from datetime import datetime
 

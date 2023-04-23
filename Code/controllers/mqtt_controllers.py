@@ -1,14 +1,22 @@
 from paho.mqtt import client as mqtt_client
 import random
 import time
+import json
+from datetime import datetime
+from threading import Thread
 
-# import gpio_control
+import gpio_control
 
 class MQTTController():
     def __init__(self, sensor_dict) -> None:
+        # GPIO pin(s) used for control
         self.gpios = sensor_dict['gpios']
-        self.topic_name = sensor_dict['topic']
+        # Topic name to publish under
+        self.topic = sensor_dict['topic']
+        # client ID we use for MQTT identification
         self.client_id = sensor_dict['client_id']
+        # update rate for time checking
+        self.time_control_update_rate =  sensor_dict['update_rate']
         # set times in "good" format for easy checking
         on_times_str    =  sensor_dict['on_interval']
         off_times_str   =  sensor_dict['off_interval']
@@ -18,11 +26,14 @@ class MQTTController():
             self.on_intervals[i][1] = datetime.strptime(off_times_str[i], '%H:%M:%S')
 
         # init GPIO control
-        # self.gpio_controller = GPIOController(self.gpios)
+        self.gpio_controller = gpio_control.GPIOController(self.gpios)
 
         # init MQTT stuff
         self.initMQTTClient()
-        mqtt_client = self.connectMQTT()
+        self.mqtt_client_ = self.connectMQTT()
+        # start thread for recieving messages
+        self.mqtt_client_.loop_start()
+
     """
  
        _   _ _   _ _ _ _           _____                 _   _                 
@@ -33,6 +44,15 @@ class MQTTController():
                            |___/                                               
  
     """
+    def runTimeControl(self):
+        while(True):
+            # check if we are in "on" period
+            self.checkTimeControl()
+            # call publisher(s)
+            self.mqttState_pub()
+            time.sleep(self.time_control_update_rate)
+
+
     def checkTimeControl(self):
         time_state = False
         # iterate over time intervals 
@@ -44,10 +64,10 @@ class MQTTController():
         if(time_state):
             # check if we are already in on state
             if(not (self.gpio_controller.state.power == time_state)):
-                self.gpioOn()
+                self.gpio_controller.gpioOn()
         else:
             if(not (self.gpio_controller.state.power == time_state)):
-                self.gpioOff()
+                self.gpio_controller.gpioOff()
 
     def inTimeInterval(self, on_time, off_time) -> bool:
         '''
@@ -73,12 +93,8 @@ class MQTTController():
  
     """
     def initMQTTClient(self) -> None:
-        self.broker = 'pflanzenkisterl.at'
+        self.broker = 'localhost'
         self.port = 1883
-        # generate client ID with pub prefix randomly
-        self.client_id = self.mqtt_client_id
-        self.username = 'pflanzenkisterl'
-        self.password = '420'
 
     def connectMQTT(self):
         def on_connect(client, userdata, flags, rc):
@@ -87,8 +103,7 @@ class MQTTController():
             else:
                 print("Failed to connect, return code %d\n", rc)
 
-        client = mqtt_client.Client(client_id)
-        client.username_pw_set(self.username, self.password)
+        client = mqtt_client.Client(self.client_id)
         client.on_connect = on_connect
         client.connect(self.broker, self.port)
         return client
@@ -103,8 +118,30 @@ class MQTTController():
                                                  
  
     """
-    # def mqttState_pub(self):
+    def mqttState_pub(self):
+        topic_full = self.topic + '/state'
+        msg = { "Power"     : self.gpio_controller.state.power, 
+                "Blocked"   : self.gpio_controller.state.blocked
+                }
+        msg_json = json.dumps(msg)
+        result = self.mqtt_client_.publish(topic_full, msg_json)
+        # result: [0, 1]
+        status = result[0]
+        if status == 0:
+            print(f"Send `{msg}` to topic `{topic_full}`")
+        else:
+            print(f"Failed to send message to topic {topic_full}")
 
+    """
+ 
+       _     _     _                           
+      | |   (_)___| |_ ___ _ __   ___ _ __ ___ 
+      | |   | / __| __/ _ \ '_ \ / _ \ '__/ __|
+      | |___| \__ \ ||  __/ | | |  __/ |  \__ \
+      |_____|_|___/\__\___|_| |_|\___|_|  |___/
+                                               
+ 
+    """
 
 class MQTTControllers():
     """
@@ -115,7 +152,9 @@ class MQTTControllers():
 
     def __init__(self, conf_dict) -> None:
         self.controller_list = []
-        for controller_dict in conf_dict:
-            self.controller_list.append(MQTTController(controller_dict))
-
+        for controller in conf_dict:
+            self.controller_list.append(MQTTController(conf_dict[controller]))
+            # start time control in threads
+            run_thread = Thread(target = self.controller_list[-1].runTimeControl)
+            run_thread.start()
 

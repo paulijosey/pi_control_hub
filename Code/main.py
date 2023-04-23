@@ -1,11 +1,13 @@
 import yaml
+import os
 
 import add_path
 import mqtt_controllers
 
 def readConf():
     # for now hardcoded
-    with open("config/pflanzenkisterl_conf.yaml", "r") as stream:
+    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 
+                "config/pflanzenkisterl_conf.yaml"), "r") as stream:
         try:
             controllers_dict = yaml.safe_load(stream)
         except yaml.YAMLError as exc:

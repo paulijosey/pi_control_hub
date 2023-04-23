@@ -2,7 +2,10 @@
 pump:
   client_id: 'pump'
   topic: '/pflanzenkisterl/controllers/pump'
-  gpios: 3
+  update_rate: 5
+  gpios: [ 
+          3
+         ]
   on_interval: [
         '8:00:00', 
         '15:00:00', 
@@ -17,6 +20,7 @@ pump:
 leds:
   client_id: 'leds'
   topic: '/pflanzenkisterl/controllers/leds'
+  update_rate: 5
   gpios: [
           12, 
           13,
