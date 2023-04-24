@@ -1,4 +1,11 @@
 {
+    "editor.rulers": [
+        100
+    ],
+    "fileheader.Author": "Paul Joseph",
+    "fileheader.Email": "josephp@student.ethz.ch",
+    "fileheader.LastModifiedBy": "Paul Joseph",
+    "git.enabled": true,
     "cSpell.words": [
         "pflanzenkisterl"
     ]

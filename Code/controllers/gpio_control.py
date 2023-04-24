@@ -101,6 +101,39 @@ class GPIOController():
         """
         self.state.blocked = False
 
+    def gpioPowerControl(self, input: float) -> bool:
+        """
+        Depending on the input either turn on/off this pin 
+        or set PWM value.
+
+        @ input: float value from 0.0 - 1.0
+        """
+        if(input == 0.0):
+            return self.gpioOff()
+        elif(input == 1.0):
+            return self.gpioOn()
+        elif(input > 0.0 and input < 1.0):
+            print("PWM support is not yet implemented!")
+        else:
+            print("Invalid input value! Only inputs from 0.0 - 1.0 " +
+                    "are valid")
+            return False
+
+    def gpioBlockControl(self, input: bool) -> bool:
+        """
+        Depending on the input either turn on/off this pin 
+        or set PWM value.
+
+        @ input: float value from 0.0 - 1.0
+        """
+        if(input == False):
+            return self.gpioUnblock()
+        elif(input == True):
+            return self.gpioBlock()
+        else:
+            print("Invalid input value! Only boolean values are allowed")
+            return False
+
     def close(self):
         '''
         open all the gpio headers that need to be controlled by this node.

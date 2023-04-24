@@ -15,6 +15,8 @@ class MQTTController():
         self.topic = sensor_dict['topic']
         # client ID we use for MQTT identification
         self.client_id = sensor_dict['client_id']
+        # Variable for checking if time control is used
+        self.time_control_activate =  True
         # update rate for time checking
         self.time_control_update_rate =  sensor_dict['update_rate']
         # set times in "good" format for easy checking
@@ -33,6 +35,8 @@ class MQTTController():
         self.mqtt_client_ = self.connectMQTT()
         # start thread for recieving messages
         self.mqtt_client_.loop_start()
+        # start subscribers
+        self.mqttInitSubs()
 
     """
  
@@ -46,8 +50,10 @@ class MQTTController():
     """
     def runTimeControl(self):
         while(True):
-            # check if we are in "on" period
-            self.checkTimeControl()
+            if(self.time_control_activate):
+                # check if we are in "on" period
+                self.checkTimeControl()
+
             # call publisher(s)
             self.mqttState_pub()
             time.sleep(self.time_control_update_rate)
@@ -121,7 +127,8 @@ class MQTTController():
     def mqttState_pub(self):
         topic_full = self.topic + '/state'
         msg = { "Power"     : self.gpio_controller.state.power, 
-                "Blocked"   : self.gpio_controller.state.blocked
+                "Blocked"   : self.gpio_controller.state.blocked,
+                "Time Control" : self.time_control_activate
                 }
         msg_json = json.dumps(msg)
         result = self.mqtt_client_.publish(topic_full, msg_json)
@@ -142,6 +149,45 @@ class MQTTController():
                                                
  
     """
+    def mqttInitSubs(self):
+        # subscribe to all subtopics
+        self.mqtt_client_.subscribe(self.topic + '/#')
+        # init power, block subscribers
+        self.mqttPower_sub()
+        self.mqttBlock_sub()
+        self.mqttTimeControl_sub()
+
+    def mqttPower_sub(self):
+        topic_full = self.topic + '/set_power'
+        def on_power_message(client, userdata, msg):
+            payload = json.loads(msg.payload)
+            # turn power on/off depending on payload
+            self.gpio_controller.gpioPowerControl(payload['power'])
+
+        self.mqtt_client_.message_callback_add(topic_full, on_power_message)
+
+    def mqttBlock_sub(self):
+        topic_full = self.topic + '/set_block'
+        def on_block_message(client, userdata, msg):
+            payload = json.loads(msg.payload)
+            # turn block on/off depending on payload
+            self.gpio_controller.gpioBlockControl(payload['block'])
+
+        self.mqtt_client_.message_callback_add(topic_full, on_block_message)
+
+    def mqttTimeControl_sub(self):
+        topic_full = self.topic + '/set_timeControl'
+        def on_timeControl_message(client, userdata, msg):
+            payload = json.loads(msg.payload)
+            # turn block on/off depending on payload
+            if(payload['timeControl'] == False):
+                self.time_control_activate = False
+            elif(payload['timeControl'] == True):
+                self.time_control_activate = True
+            else:
+                print("Invalid input value! Only boolean values are allowed")
+
+        self.mqtt_client_.message_callback_add(topic_full, on_timeControl_message)
 
 class MQTTControllers():
     """
