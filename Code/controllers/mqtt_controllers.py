@@ -33,6 +33,8 @@ class MQTTController():
         self.mqtt_client_ = self.connectMQTT()
         # start thread for recieving messages
         self.mqtt_client_.loop_start()
+        # start subscribers
+        self.mqttInitSubs()
 
     """
  
@@ -142,6 +144,30 @@ class MQTTController():
                                                
  
     """
+    def mqttInitSubs(self):
+        # subscribe to all subtopics
+        self.mqtt_client_.subscribe(self.topic + '/#')
+        # init power, block subscribers
+        self.mqttPower_sub()
+        self.mqttBlock_sub()
+
+    def mqttPower_sub(self):
+        topic_full = self.topic + '/set_power'
+        def on_power_message(client, userdata, msg):
+            payload = json.loads(msg.payload)
+            # turn power on/off depending on payload
+            self.gpio_controller.gpioPowerControl(payload['power'])
+
+        self.mqtt_client_.message_callback_add(topic_full, on_power_message)
+
+    def mqttBlock_sub(self):
+        topic_full = self.topic + '/set_block'
+        def on_block_message(client, userdata, msg):
+            payload = json.loads(msg.payload)
+            # turn block on/off depending on payload
+            self.gpio_controller.gpioBlockControl(payload['block'])
+
+        self.mqtt_client_.message_callback_add(topic_full, on_block_message)
 
 class MQTTControllers():
     """
