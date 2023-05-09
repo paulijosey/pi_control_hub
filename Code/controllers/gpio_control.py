@@ -121,7 +121,7 @@ class GPIOController():
         self.state.pwm_dc = dutyCycle
         for pwm_obj in self.pwm_controls:
             pwm_obj.ChangeDutyCycle(self.state.pwm_dc * 100)
-        print('Set PWM Duty Cycle to ' + self.state.pwm_dc)
+        print(f'Set PWM Duty Cycle to {self.state.pwm_dc}')
         return True
 
     def gpioBlock(self) -> bool:
