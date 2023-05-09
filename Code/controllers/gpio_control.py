@@ -32,10 +32,14 @@ class GPIOController():
 
 
     """
-    def __init__(self, gpio_pins, pwm_usage=False) -> None:
+    def __init__(self, gpio_pins, pwm_settings) -> None:
         self.params = GPIOParameters()
         self.params.gpios = gpio_pins
-        self.state = GPIOControllerState(pwm_usage)
+        self.state = GPIOControllerState(pwm_settings["enabled"])
+        if(self.state.pwm):
+            self.state.pwm_freq = pwm_settings["frequency"]
+            self.state.pwm_dc = pwm_settings["dutyCycle"]
+
 
         # create an empty object for PWM use if needed
         self.pwm_controls = []
