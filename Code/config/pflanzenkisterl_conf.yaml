@@ -2,7 +2,7 @@
 pump:
   client_id: 'pump'
   topic: '/pflanzenkisterl/controllers/pump'
-  update_rate: 5
+  update_rate: 17
   pwm: 
     enabled: 0
   gpios: [ 
@@ -24,7 +24,7 @@ leds:
   topic: '/pflanzenkisterl/controllers/leds'
   update_rate: 5
   pwm: 
-    enabled: 1
+    enabled: 0
     dutyCycle: 0.5
     frequency: 500
   gpios: [
