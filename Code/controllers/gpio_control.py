@@ -19,7 +19,7 @@ class GPIOControllerState():
         # in case this port is run in PWM mode
         self.pwm = pwm_usage
         self.pwm_freq = 500
-        self.pwm_dc = 0
+        self.pwm_dc = 0.5
 
 class GPIOController():
     """
@@ -77,7 +77,7 @@ class GPIOController():
             self.pwm_controls.append(GPIO.PWM(gpio_pin, self.state.pwm_freq))
         for pwm_obj in self.pwm_controls:
             # start pwm with duty cycle 0 (aka off)
-            pwm_obj.start(self.state.pwm_dc)
+            pwm_obj.start(0)
         self.state.pwm = True
 
     def stopPWM(self):
@@ -114,14 +114,17 @@ class GPIOController():
         print('Turning off')
         return True
 
-    def gpioPWM(self, dutyCycle: float) -> bool:
+    def gpioPWM(self, dutyCycle: float, freq: float) -> bool:
         """
         Sets a PWM value for this controller
         """
         self.state.pwm_dc = dutyCycle
+        self.state.pwm_freq = freq
         for pwm_obj in self.pwm_controls:
             pwm_obj.ChangeDutyCycle(self.state.pwm_dc * 100)
+            pwm_obj.ChangeFrequency(self.state.pwm_freq)
         print(f'Set PWM Duty Cycle to {self.state.pwm_dc}')
+        print(f'Set PWM Frequency to {self.state.pwm_freq}')
         return True
 
     def gpioBlock(self) -> bool:
@@ -149,13 +152,13 @@ class GPIOController():
                     "are valid")
             return False
 
-        if(self.state.pwm):
-            return self.gpioPWM(input)
         else:
             if(input == 0.0):
                 return self.gpioOff()
             elif(input == 1.0):
                 return self.gpioOn()
+            else:
+                return self.gpioPWM(input, self.state.pwm_freq)
 
     def gpioBlockControl(self, input: bool) -> bool:
         """

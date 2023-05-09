@@ -70,7 +70,11 @@ class MQTTController():
         if(time_state):
             # check if we are already in on state
             if(not (self.gpio_controller.state.power == time_state)):
-                self.gpio_controller.gpioPowerControl(1)
+                if(self.gpio_controller.state.pwm):
+                    # if this controller operates in PWM mode use set pwm values
+                    self.gpio_controller.gpioPowerControl(self.gpio_controller.state.pwm_dc)
+                else:
+                    self.gpio_controller.gpioPowerControl(1)
         else:
             if(not (self.gpio_controller.state.power == time_state)):
                 self.gpio_controller.gpioPowerControl(0)
