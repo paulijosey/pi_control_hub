@@ -11,11 +11,15 @@ class GPIOParameters:
         pass
 
 class GPIOControllerState():
-    def __init__(self) -> None:
+    def __init__(self, pwm_usage=False) -> None:
         # no power(0), full power(1), dimmed(in between)
         self.power = 0
         # in case a sensor blocks control 
         self.blocked = False
+        # in case this port is run in PWM mode
+        self.pwm = pwm_usage
+        self.pwm_freq = 500
+        self.pwm_dc = 0.5
 
 class GPIOController():
     """
@@ -28,10 +32,17 @@ class GPIOController():
 
 
     """
-    def __init__(self, gpio_pins) -> None:
+    def __init__(self, gpio_pins, pwm_settings) -> None:
         self.params = GPIOParameters()
         self.params.gpios = gpio_pins
-        self.state = GPIOControllerState()
+        self.state = GPIOControllerState(pwm_settings["enabled"])
+        if(self.state.pwm):
+            self.state.pwm_freq = pwm_settings["frequency"]
+            self.state.pwm_dc = pwm_settings["dutyCycle"]
+
+
+        # create an empty object for PWM use if needed
+        self.pwm_controls = []
 
         # open gpio headers
         self.init_gpio_headers()
@@ -57,8 +68,27 @@ class GPIOController():
         '''
         # use GPIO header numbers
         GPIO.setmode(GPIO.BCM)
+
+        # check if we should run in PWM mode
         for gpio_pin in self.params.gpios:
             GPIO.setup(gpio_pin, GPIO.OUT)
+        if(self.state.pwm):
+            self.setupPWM()
+
+    def setupPWM(self):
+        for gpio_pin in self.params.gpios:
+            # set initial frequency
+            self.pwm_controls.append(GPIO.PWM(gpio_pin, self.state.pwm_freq))
+        for pwm_obj in self.pwm_controls:
+            # start pwm with duty cycle 0 (aka off)
+            pwm_obj.start(0)
+        self.state.pwm = True
+
+    def stopPWM(self):
+        for pwm_obj in self.pwm_controls:
+            # stop it! 
+            pwm_obj.stop()
+        self.state.pwm = False
 
     def gpioOn(self) -> bool:
         '''
@@ -88,6 +118,19 @@ class GPIOController():
         print('Turning off')
         return True
 
+    def gpioPWM(self, dutyCycle: float, freq: float) -> bool:
+        """
+        Sets a PWM value for this controller
+        """
+        self.state.pwm_dc = dutyCycle
+        self.state.pwm_freq = freq
+        for pwm_obj in self.pwm_controls:
+            pwm_obj.ChangeDutyCycle(self.state.pwm_dc * 100)
+            pwm_obj.ChangeFrequency(self.state.pwm_freq)
+        print(f'Set PWM Duty Cycle to {self.state.pwm_dc}')
+        print(f'Set PWM Frequency to {self.state.pwm_freq}')
+        return True
+
     def gpioBlock(self) -> bool:
         """
         Block this controller and turn it off
@@ -108,23 +151,25 @@ class GPIOController():
 
         @ input: float value from 0.0 - 1.0
         """
-        if(input == 0.0):
-            return self.gpioOff()
-        elif(input == 1.0):
-            return self.gpioOn()
-        elif(input > 0.0 and input < 1.0):
-            print("PWM support is not yet implemented!")
-        else:
+        if(input < 0.0 or input > 1.0):
             print("Invalid input value! Only inputs from 0.0 - 1.0 " +
                     "are valid")
             return False
+
+        else:
+            if(input == 0.0):
+                return self.gpioOff()
+            elif(input == 1.0):
+                return self.gpioOn()
+            else:
+                return self.gpioPWM(input, self.state.pwm_freq)
 
     def gpioBlockControl(self, input: bool) -> bool:
         """
         Depending on the input either turn on/off this pin 
         or set PWM value.
 
-        @ input: float value from 0.0 - 1.0
+        @ input: bool
         """
         if(input == False):
             return self.gpioUnblock()
@@ -142,33 +187,3 @@ class GPIOController():
         '''
         GPIO.cleanup()
  
-    # def check_status(self):
-    #     status = False
-    #     # iterate over pump intervals 
-    #     for interval in self.params.on_intervals:
-    #         status = self.inTimeInterval(interval[0], interval[1])
-    #         if (status):
-    #             break
-
-    #     if(status):
-    #         # check if we are already in pumping state
-    #         if(not (self.status == status)):
-    #             self.status = status
-    #             self.gpioOn()
-    #     else:
-    #         if(not (self.status == status)):
-    #             self.status = status
-    #             self.gpioOff()
-
-    # def inTimeInterval(self, on_time, off_time) -> bool:
-    #     '''
-    #     checks if current time is in on_time < now < off_time
-    #     '''
-    #     now = datetime.now()
-    #     on_time = now.replace(hour=on_time.hour, 
-    #                         minute=on_time.minute, 
-    #                         second=on_time.second)
-    #     off_time = now.replace(hour=off_time.hour, 
-    #                         minute=off_time.minute, 
-    #                         second=off_time.second)
-    #     return now > on_time and now < off_time
