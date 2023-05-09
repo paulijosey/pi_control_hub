@@ -2,11 +2,11 @@
 pump:
   client_id: 'pump'
   topic: '/pflanzenkisterl/controllers/pump'
-  update_rate: 17
+  update_rate: 30
   pwm: 
     enabled: 0
   gpios: [ 
-          3
+          17
          ]
   on_interval: [
         '8:00:00', 
@@ -22,7 +22,7 @@ pump:
 leds:
   client_id: 'leds'
   topic: '/pflanzenkisterl/controllers/leds'
-  update_rate: 5
+  update_rate: 30
   pwm: 
     enabled: 0
     dutyCycle: 0.5
