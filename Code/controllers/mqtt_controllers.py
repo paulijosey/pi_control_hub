@@ -28,7 +28,7 @@ class MQTTController():
             self.on_intervals[i][1] = datetime.strptime(off_times_str[i], '%H:%M:%S')
 
         # init GPIO control
-        self.gpio_controller = gpio_control.GPIOController(self.gpios)
+        self.gpio_controller = gpio_control.GPIOController(self.gpios, sensor_dict['pwm'])
 
         # init MQTT stuff
         self.initMQTTClient()
@@ -70,10 +70,10 @@ class MQTTController():
         if(time_state):
             # check if we are already in on state
             if(not (self.gpio_controller.state.power == time_state)):
-                self.gpio_controller.gpioOn()
+                self.gpio_controller.gpioPowerControl(1)
         else:
             if(not (self.gpio_controller.state.power == time_state)):
-                self.gpio_controller.gpioOff()
+                self.gpio_controller.gpioPowerControl(0)
 
     def inTimeInterval(self, on_time, off_time) -> bool:
         '''
@@ -128,7 +128,8 @@ class MQTTController():
         topic_full = self.topic + '/state'
         msg = { "Power"     : self.gpio_controller.state.power, 
                 "Blocked"   : self.gpio_controller.state.blocked,
-                "Time Control" : self.time_control_activate
+                "Time Control" : self.time_control_activate,
+                "PWM Control"  : self.gpio_controller.state.pwm
                 }
         msg_json = json.dumps(msg)
         result = self.mqtt_client_.publish(topic_full, msg_json)

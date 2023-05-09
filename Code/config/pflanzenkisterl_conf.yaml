@@ -3,6 +3,7 @@ pump:
   client_id: 'pump'
   topic: '/pflanzenkisterl/controllers/pump'
   update_rate: 5
+  pwm: 0
   gpios: [ 
           3
          ]
@@ -21,6 +22,7 @@ leds:
   client_id: 'leds'
   topic: '/pflanzenkisterl/controllers/leds'
   update_rate: 5
+  pwm: 1
   gpios: [
           12, 
           13,
