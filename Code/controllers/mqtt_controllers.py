@@ -39,14 +39,14 @@ class MQTTController():
         self.mqttInitSubs()
 
     """
- 
-       _   _ _   _ _ _ _           _____                 _   _                 
-      | | | | |_(_) (_) |_ _   _  |  ___|   _ _ __   ___| |_(_) ___  _ __  ___ 
+
+       _   _ _   _ _ _ _           _____                 _   _
+      | | | | |_(_) (_) |_ _   _  |  ___|   _ _ __   ___| |_(_) ___  _ __  ___
       | | | | __| | | | __| | | | | |_ | | | | '_ \ / __| __| |/ _ \| '_ \/ __|
       | |_| | |_| | | | |_| |_| | |  _|| |_| | | | | (__| |_| | (_) | | | \__ \
        \___/ \__|_|_|_|\__|\__, | |_|   \__,_|_| |_|\___|\__|_|\___/|_| |_|___/
-                           |___/                                               
- 
+                           |___/
+
     """
     def runTimeControl(self):
         while(True):
@@ -61,7 +61,7 @@ class MQTTController():
 
     def checkTimeControl(self):
         time_state = False
-        # iterate over time intervals 
+        # iterate over time intervals
         for interval in self.on_intervals:
             time_state = self.inTimeInterval(interval[0], interval[1])
             if (time_state):
@@ -84,23 +84,23 @@ class MQTTController():
         checks if current time is in on_time < now < off_time
         '''
         now = datetime.now()
-        on_time = now.replace(hour=on_time.hour, 
-                            minute=on_time.minute, 
+        on_time = now.replace(hour=on_time.hour,
+                            minute=on_time.minute,
                             second=on_time.second)
-        off_time = now.replace(hour=off_time.hour, 
-                            minute=off_time.minute, 
+        off_time = now.replace(hour=off_time.hour,
+                            minute=off_time.minute,
                             second=off_time.second)
         return now > on_time and now < off_time
 
     """
- 
-       __  __  ___ _____ _____   ____       _   _   _                  
-      |  \/  |/ _ \_   _|_   _| / ___|  ___| |_| |_(_)_ __   __ _ ___  
-      | |\/| | | | || |   | |   \___ \ / _ \ __| __| | '_ \ / _` / __| 
-      | |  | | |_| || |   | |    ___) |  __/ |_| |_| | | | | (_| \__ \ 
-      |_|  |_|\__\_\|_|   |_|   |____/ \___|\__|\__|_|_| |_|\__, |___/ 
-                                                            |___/      
- 
+
+       __  __  ___ _____ _____   ____       _   _   _
+      |  \/  |/ _ \_   _|_   _| / ___|  ___| |_| |_(_)_ __   __ _ ___
+      | |\/| | | | || |   | |   \___ \ / _ \ __| __| | '_ \ / _` / __|
+      | |  | | |_| || |   | |    ___) |  __/ |_| |_| | | | | (_| \__ \
+      |_|  |_|\__\_\|_|   |_|   |____/ \___|\__|\__|_|_| |_|\__, |___/
+                                                            |___/
+
     """
     def initMQTTClient(self) -> None:
         self.broker = 'localhost'
@@ -119,18 +119,18 @@ class MQTTController():
         return client
 
     """
- 
-       ____        _     _ _     _               
-      |  _ \ _   _| |__ | (_)___| |__   ___ _ __ 
+
+       ____        _     _ _     _
+      |  _ \ _   _| |__ | (_)___| |__   ___ _ __
       | |_) | | | | '_ \| | / __| '_ \ / _ \ '__|
-      |  __/| |_| | |_) | | \__ \ | | |  __/ |   
-      |_|    \__,_|_.__/|_|_|___/_| |_|\___|_|   
-                                                 
- 
+      |  __/| |_| | |_) | | \__ \ | | |  __/ |
+      |_|    \__,_|_.__/|_|_|___/_| |_|\___|_|
+
+
     """
     def mqttState_pub(self):
         topic_full = self.topic + '/state'
-        msg = { "Power"     : self.gpio_controller.state.power, 
+        msg = { "Power"     : self.gpio_controller.state.power,
                 "Blocked"   : self.gpio_controller.state.blocked,
                 "Time Control" : self.time_control_activate,
                 "PWM Control"  : self.gpio_controller.state.pwm
@@ -145,14 +145,14 @@ class MQTTController():
             print(f"Failed to send message to topic {topic_full}")
 
     """
- 
-       _     _     _                           
-      | |   (_)___| |_ ___ _ __   ___ _ __ ___ 
+
+       _     _     _
+      | |   (_)___| |_ ___ _ __   ___ _ __ ___
       | |   | / __| __/ _ \ '_ \ / _ \ '__/ __|
       | |___| \__ \ ||  __/ | | |  __/ |  \__ \
       |_____|_|___/\__\___|_| |_|\___|_|  |___/
-                                               
- 
+
+
     """
     def mqttInitSubs(self):
         # subscribe to all subtopics
@@ -196,8 +196,8 @@ class MQTTController():
 
 class MQTTControllers():
     """
-        This class handles all connected sensors, initializes them as 
-        given by the config file and implements subscribers and 
+        This class handles all connected sensors, initializes them as
+        given by the config file and implements subscribers and
         publishers.
     """
 
@@ -208,4 +208,3 @@ class MQTTControllers():
             # start time control in threads
             run_thread = Thread(target = self.controller_list[-1].runTimeControl)
             run_thread.start()
-
