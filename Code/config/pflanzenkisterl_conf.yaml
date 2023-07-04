@@ -2,41 +2,41 @@
 pump:
   client_id: 'pump'
   topic: '/pflanzenkisterl/controllers/pump'
-  update_rate: 30
-  pwm: 
+  update_rate: 1
+  pwm:
     enabled: 0
-  gpios: [ 
+  gpios: [
           17
          ]
   on_interval: [
-        '8:00:00', 
-        '15:00:00', 
+        '8:00:00',
+        '15:00:00',
         '23:00:00'
       ]
   off_interval: [
-        '8:10:00', 
-        '15:10:00', 
+        '8:10:00',
+        '15:10:00',
         '23:10:00'
       ]
 ################################# LEDS ###########################################
 leds:
   client_id: 'leds'
   topic: '/pflanzenkisterl/controllers/leds'
-  update_rate: 30
-  pwm: 
+  update_rate: 1
+  pwm:
     enabled: 0
     dutyCycle: 0.5
     frequency: 500
   gpios: [
-          12, 
+          12,
           13,
           18
         ]
   on_interval: [
-        '8:00:00', 
-        '13:30:00', 
+        '8:00:00',
+        '13:30:00',
       ]
   off_interval: [
-        '12:00:00', 
+        '12:00:00',
         '20:00:00'
       ]

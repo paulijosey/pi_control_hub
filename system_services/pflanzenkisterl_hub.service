@@ -1,0 +1,12 @@
+[Unit]
+Description=Control gpio pins by timing
+After=mosquito.service
+Requires=mosquito.service
+
+[Service]
+WorkingDirectory=/home/pi/
+User=pi
+ExecStart=/usr/bin/python3 /home/pi/git/pi_control_hub/Code/main.py
+
+[Install]
+WantedBy=multi-user.target
